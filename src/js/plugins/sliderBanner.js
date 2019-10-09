@@ -1,7 +1,7 @@
-import Slider from '../classes/slider';
+import Swiper from 'swiper';
 
 export default () => {
-	const sliderBanner = new Slider('.js-slider-banner', {
+	const sliderBanner = new Swiper('.js-slider-banner', {
 		loop: true,
 		mousewheel: false,
 		effect: 'fade',
@@ -15,6 +15,4 @@ export default () => {
 			clickable: true
 		}
 	});
-
-	sliderBanner.init();
 };

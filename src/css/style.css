@@ -22,7 +22,10 @@
 @import './components/videoCard';
 @import './components/bookCard';
 @import './components/banner';
+@import './components/swiper';
+@import './components/sliderDefault';
 @import './components/sliderBanner';
+@import './components/sliderVideo';
 @import './components/preview';
 @import './components/sectionPopular';
 @import './components/sectionAccent';

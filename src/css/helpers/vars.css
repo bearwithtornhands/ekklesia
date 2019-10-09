@@ -30,6 +30,7 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--button a, button, label, input;
 @custom-selector :--inline a, button, label;
+@custom-selector :--sliders .sliderDefault, .sliderBanner, .sliderVideo;
 
 @custom-media --desktop (width >= 1264px);
 @custom-media --tablet (width >= 768px);
