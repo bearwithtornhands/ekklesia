@@ -1,0 +1,50 @@
+.preview {
+	& {
+		position: relative;
+		max-width: 282px;
+		padding-left: 30px;
+
+		@apply --secondaryFontStyle;
+
+		&:before {
+			@util position(absolute, 2px auto auto 0);
+
+			@apply --i-type-article;
+			font-size: 18px;
+			text-align: center;
+
+			display: block;
+			@util size(18px);
+			background-color: transparent;
+		}
+
+		&_book {
+			&:before {
+				@apply --i-type-book;
+			}
+		}
+
+		&_video {
+			&:before {
+				@apply --i-type-video;
+			}
+		}
+	}
+
+	h6,
+	p {
+		margin: 0;
+	}
+
+	h6 {
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: var(--medium);
+	}
+
+	a {
+		border: 0;
+
+		color: inherit;
+	}
+}

@@ -1,0 +1,22 @@
+.footerLogo {
+	a,
+	img {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	a {
+		border: 0;
+		filter: grayscale(1);
+
+		@media (--hover) {
+			&:hover {
+				filter: grayscale(0);
+			}
+		}
+
+		&:focus {
+			filter: grayscale(0);
+		}
+	}
+}

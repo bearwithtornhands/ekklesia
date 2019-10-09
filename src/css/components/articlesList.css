@@ -1,0 +1,29 @@
+.articlesList {
+	& {
+		margin-bottom: 48px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 56px;
+		}
+	}
+
+	.row {
+		margin-top: -40px;
+	}
+
+	.col {
+		margin-top: 40px;
+	}
+
+	&__banner {
+		margin-top: 56px;
+
+		& + .col {
+			margin-top: 56px;
+		}
+	}
+}

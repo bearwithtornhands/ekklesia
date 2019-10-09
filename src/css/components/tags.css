@@ -1,0 +1,53 @@
+.tags {
+	& {
+		margin-bottom: 16px;
+
+		font-size: 9px;
+		line-height: 16px;
+		font-weight: var(--medium);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		display: block;
+		border: 0;
+		padding: 0 4px;
+		background-color: var(--paleColor);
+
+		color: var(--primaryColor);
+	}
+
+	&__list {
+		margin: -4px -2px 0;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
+	&__item {
+		margin-top: 4px;
+
+		padding: 0 2px;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&_light {
+		.tags {
+			&__item {
+				a {
+					border-radius: 4px;
+					background-color: #ffffff;
+				}
+			}
+		}
+	}
+}

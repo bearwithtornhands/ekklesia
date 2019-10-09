@@ -1,0 +1,83 @@
+.bookCard {
+	@apply --secondaryFontStyle;
+
+	h3,
+	p {
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	h3 {
+		margin: 0 0 16px;
+	}
+
+	p {
+		margin: 8px 0;
+	}
+
+	&__head {
+		display: block;
+		border: 0;
+
+		p {
+			margin-bottom: 0;
+		}
+
+		@media (--hover) {
+			&:hover {
+				.bookCard {
+					&__image {
+						img {
+							box-shadow: 0 0 10px 0 rgba(#000000, 32%);
+
+							transition: none;
+						}
+					}
+				}
+			}
+		}
+
+		&:focus {
+			.bookCard {
+				&__image {
+					img {
+						box-shadow: 0 0 10px 0 rgba(#000000, 32%);
+
+						transition: none;
+					}
+				}
+			}
+		}
+
+		@media (--tablet) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__text {
+		display: none;
+
+		@media (--tablet) {
+			display: block;
+		}
+	}
+
+	&__image {
+		margin-bottom: 32px;
+
+		max-width: 160px;
+		background-color: var(--paleColor);
+
+		img {
+			max-height: 240px;
+			box-shadow: 6px 6px 20px rgba(#000000, 24%);
+
+			transition: box-shadow var(--defaultTransitionDuration);
+		}
+	}
+}

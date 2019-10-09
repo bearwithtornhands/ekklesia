@@ -1,0 +1,61 @@
+.socialNetworks {
+	&__list {
+		margin: -10px -5px 0;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__item {
+		margin-top: 10px;
+
+		padding: 0 5px;
+
+		&:before {
+			display: none;
+		}
+
+		a,
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@util size(35px);
+			border: 0;
+			border-radius: 100%;
+			background-color: var(--paleColor);
+
+			i {
+				display: inline-block;
+				vertical-align: top;
+
+				line-height: 1;
+			}
+
+			@media (--hover) {
+				&:hover {
+					background-color: var(--accentColor);
+					color: #ffffff;
+				}
+			}
+
+			&:focus {
+				background-color: var(--accentColor);
+				color: #ffffff;
+			}
+		}
+
+		.i-vk {
+			font-size: 9px;
+		}
+
+		.i-fb {
+			font-size: 15px;
+		}
+
+		.i-yt {
+			font-size: 10.5px;
+		}
+	}
+}

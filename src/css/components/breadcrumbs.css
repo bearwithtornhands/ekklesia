@@ -1,0 +1,76 @@
+.breadcrumbs {
+	& {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+
+		@apply --secondaryFontStyle;
+	}
+
+	a {
+		border: 0;
+	}
+
+	nav {
+		margin-left: 16px;
+
+		position: relative;
+		padding-left: 17px;
+
+		&:before {
+			content: '';
+
+			@util position(absolute, calc(50% + 1px) auto auto 0);
+			transform: translateY(-50%);
+
+			display: block;
+			@util size(1px, 10px);
+			background-color: var(--primaryColor);
+		}
+	}
+
+	ul {
+		margin: 0;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+	}
+
+	li {
+		margin-left: 8px;
+
+		padding-left: 11px;
+
+		&:before {
+			top: calc(50% + 1px);
+			transform: translateY(-50%);
+
+			@util size(3px);
+			border-radius: 100%;
+			background-color: var(--primaryColor);
+		}
+
+		&:first-child {
+			margin-left: 0;
+
+			padding-left: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		span {
+			color: var(--additionalColor);
+		}
+	}
+
+	.pageContent & {
+		margin-top: -8px;
+
+		@media (--tablet) {
+			margin-top: -28px;
+		}
+	}
+}

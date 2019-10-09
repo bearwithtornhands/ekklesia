@@ -1,0 +1,116 @@
+.articleCard {
+	@apply --secondaryFontStyle;
+
+	h3,
+	p {
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	h3 {
+		margin: 16px 0;
+
+		a {
+			border: 0;
+		}
+	}
+
+	p {
+		margin: 8px 0;
+	}
+
+	&__image {
+		margin: 0 calc(var(--global-gap-small) * (-1));
+
+		text-align: center;
+
+		a {
+			border: 0;
+		}
+
+		img {
+			border-radius: 4px;
+		}
+	}
+
+	&__info {
+		margin-bottom: 16px;
+
+		p,
+		.tags {
+			display: none;
+		}
+	}
+
+	&__image {
+		margin-bottom: 16px;
+	}
+
+	&__description {
+		display: none;
+	}
+
+	@media (--tablet) {
+		&__inner {
+			column-count: 2;
+			column-gap: 40px;
+		}
+
+		&__info,
+		&__description,
+		&__image {
+			break-inside: avoid;
+		}
+
+		&__info {
+			p,
+			.tags {
+				display: block;
+			}
+		}
+
+		&__image {
+			margin: 0;
+		}
+
+		&__description {
+			display: block;
+		}
+
+		&__footer {
+			display: none;
+		}
+	}
+
+	@media (--desktop) {
+		&__inner {
+			column-count: unset;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+
+		&__info {
+			margin-right: 36px;
+
+			width: 324px;
+		}
+
+		&__image {
+			margin-right: 40px;
+
+			flex: 1 1 0%;
+		}
+
+		&__description {
+			order: 1;
+
+			width: 460px;
+		}
+	}
+}

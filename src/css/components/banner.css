@@ -1,0 +1,76 @@
+.banner {
+	& {
+		position: relative;
+		overflow: hidden;
+
+		color: #ffffff;
+	}
+
+	h2 {
+		margin: 0 0 24px;
+
+		font-size: 38px;
+		line-height: 46px;
+		font-weight: var(--bold);
+
+		i {
+			font-family: var(--serifFont);
+		}
+
+		@media (--tablet) {
+			margin-bottom: 32px;
+
+			font-size: 88px;
+			line-height: 86px;
+		}
+	}
+
+	a {
+		position: relative;
+		border-bottom-color: var(--accentColor);
+
+		font-weight: var(--medium);
+
+		&:after {
+			content: '→';
+
+			@util position(absolute, auto -8px auto auto);
+			transform: translate(100%, 0);
+		}
+	}
+
+	&__image {
+		@util position(absolute, 0);
+
+		img {
+			@util size(100%);
+			object-fit: cover;
+		}
+
+		@supports not (object-fit: cover) {
+			img {
+				@util center;
+				@util size(auto);
+				max-width: none;
+				min-width: 100%;
+				min-height: 100%;
+			}
+		}
+	}
+
+	&__description {
+		position: relative;
+		z-index: 1;
+
+		height: 450px;
+		padding: 106px 0;
+
+		@media (--tablet) {
+			height: 100vh;
+			height: calc(var(--vh, 1vh) * 100);
+			min-height: 650px;
+			max-height: 850px;
+			padding: 200px 0;
+		}
+	}
+}

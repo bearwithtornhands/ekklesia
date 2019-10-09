@@ -1,0 +1,37 @@
+.footerNav {
+	& {
+		font-size: 15px;
+		line-height: 18px;
+		font-weight: var(--medium);
+	}
+
+	&__list {
+		margin: -13px 0;
+
+		@media (--tablet) {
+			margin: -8px -17px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		padding-left: 0;
+
+		&:before {
+			display: none;
+		}
+
+		a {
+			display: block;
+			padding: 13px 0;
+			border: 0;
+
+			@media (--tablet) {
+				padding: 8px 17px;
+			}
+		}
+	}
+}

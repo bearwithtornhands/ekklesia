@@ -1,0 +1,17 @@
+.pageHead {
+	h1 {
+		margin: 16px 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		@media (--tablet) {
+			margin: 24px 0;
+		}
+	}
+}

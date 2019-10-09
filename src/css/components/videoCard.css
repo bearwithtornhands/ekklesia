@@ -1,0 +1,94 @@
+.videoCard {
+	@apply --secondaryFontStyle;
+
+	h3,
+	p {
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	h3 {
+		margin: 16px 0;
+	}
+
+	p {
+		margin: 8px 0;
+	}
+
+	&__head {
+		margin-bottom: 16px;
+
+		display: block;
+		border: 0;
+
+		@media (--hover) {
+			&:hover {
+				.videoCard {
+					&__image {
+						&:after {
+							background-color: rgba(#ffffff, 0%);
+						}
+					}
+				}
+			}
+		}
+
+		&:focus {
+			.videoCard {
+				&__image {
+					&:after {
+						background-color: rgba(#ffffff, 0%);
+					}
+				}
+			}
+		}
+	}
+
+	&__image {
+		margin-bottom: 32px;
+
+		position: relative;
+		border-radius: 4px;
+		overflow: hidden;
+		background-color: var(--paleColor);
+
+		text-align: center;
+
+		&:before {
+			content: '';
+
+			@util aspect-ratio(272:156);
+
+			@media (--tablet) {
+				@util aspect-ratio(218:156);
+			}
+		}
+
+		&:after {
+			content: '';
+
+			@util position(absolute, 0);
+			background-color: rgba(#ffffff, 50%);
+
+			display: block;
+
+			transition: background-color var(--defaultTransitionDuration);
+		}
+
+		img {
+			@util center;
+		}
+	}
+
+	&__icon {
+		@util center;
+		z-index: 1;
+
+		font-size: 42px;
+	}
+}

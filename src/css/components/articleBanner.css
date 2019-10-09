@@ -1,0 +1,120 @@
+.articleBanner {
+	& {
+		margin: 0 calc(var(--global-gap-small) * (-1));
+
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0px 10px 40px rgba(#000000, 30%);
+
+		@apply --secondaryFontStyle;
+		color: #ffffff;
+
+		@media (--tablet) {
+			margin: 0 calc(var(--global-gap-medium) * (-1));
+		}
+
+		@media (--desktop) {
+			margin: 0;
+
+			border-radius: 8px;
+		}
+	}
+
+	&__inner {
+		padding: 32px var(--global-gap-small) 28px;
+
+		@media (--tablet) {
+			padding-left: var(--global-gap-medium);
+			padding-right: var(--global-gap-medium);
+		}
+
+		@media (--desktop) {
+			padding-left: 48px;
+			padding-right: 48px;
+		}
+	}
+
+	&__image {
+		@util center;
+
+		&:after {
+			content: '';
+
+			@util position(absolute, 0 auto 0 0);
+			width: 100%;
+			background: rgba(#000000, 70%);
+
+			display: block;
+
+			@media (--tablet) {
+				width: 768px;
+				background: linear-gradient(
+					90deg,
+					rgba(#000000, 70%) 50%,
+					rgba(#000000, 0) 100%
+				);
+			}
+
+			@media (--desktop) {
+				width: 700px;
+			}
+		}
+
+		img {
+			max-width: none;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 1;
+
+		max-width: 400px;
+
+		h2,
+		p {
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		h2 {
+			margin: 16px 0;
+		}
+
+		p {
+			margin: 8px 0;
+
+			span {
+				color: rgba(#ffffff, 80%);
+			}
+		}
+
+		footer {
+			font-size: 14px;
+			line-height: 28px;
+
+			a {
+				position: relative;
+				border-bottom-color: var(--accentColor);
+
+				font-weight: var(--medium);
+
+				&:after {
+					content: '→';
+
+					@util position(absolute, auto -8px auto auto);
+					transform: translate(100%, 0);
+				}
+			}
+		}
+
+		.tags {
+			margin-bottom: 24px;
+		}
+	}
+}

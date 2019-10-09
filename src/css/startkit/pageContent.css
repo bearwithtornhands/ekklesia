@@ -1,0 +1,17 @@
+.pageContent {
+	padding: 98px 0 48px;
+	/* 90 */
+
+	&_null {
+		padding-top: 0;
+	}
+
+	@media (--tablet) {
+		padding: 148px 0 80px;
+		/* 120 */
+
+		&_null {
+			padding-top: 0;
+		}
+	}
+}

@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/icons/iconfont.eot');
+  src: url('../fonts/icons/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/icons/iconfont.woff2') format('woff2'),
+    url('../fonts/icons/iconfont.woff') format('woff'),
+    url('../fonts/icons/iconfont.ttf') format('truetype'),
+    url('../fonts/icons/iconfont.svg#iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.i-cross:before,
+.i-fb:before,
+.i-loupe:before,
+.i-menu:before,
+.i-play:before,
+.i-ribbon:before,
+.i-type-article:before,
+.i-type-book:before,
+.i-type-video:before,
+.i-vk:before,
+.i-yt:before {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+:root {
+  --i-cross: {
+      content: "\EA01";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-fb: {
+      content: "\EA02";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-loupe: {
+      content: "\EA03";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-menu: {
+      content: "\EA04";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-play: {
+      content: "\EA05";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-ribbon: {
+      content: "\EA06";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-type-article: {
+      content: "\EA07";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-type-book: {
+      content: "\EA08";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-type-video: {
+      content: "\EA09";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-vk: {
+      content: "\EA0A";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  --i-yt: {
+      content: "\EA0B";
+
+      font-family: "iconfont";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      text-decoration: inherit;
+    }
+  
+}
+
+.i-cross:before { content: "\EA01" }
+.i-fb:before { content: "\EA02" }
+.i-loupe:before { content: "\EA03" }
+.i-menu:before { content: "\EA04" }
+.i-play:before { content: "\EA05" }
+.i-ribbon:before { content: "\EA06" }
+.i-type-article:before { content: "\EA07" }
+.i-type-book:before { content: "\EA08" }
+.i-type-video:before { content: "\EA09" }
+.i-vk:before { content: "\EA0A" }
+.i-yt:before { content: "\EA0B" }
