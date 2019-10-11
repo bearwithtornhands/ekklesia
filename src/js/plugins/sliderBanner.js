@@ -1,9 +1,12 @@
 import Swiper from 'swiper';
 
 export default () => {
-	const sliderBanner = new Swiper('.js-slider-banner', {
+	const SLIDER_CLASSNAME = '.js-slider-banner';
+
+	if ($(SLIDER_CLASSNAME).length === 0) return;
+
+	const sliderBanner = new Swiper(SLIDER_CLASSNAME, {
 		loop: true,
-		mousewheel: false,
 		effect: 'fade',
 		autoplay: {
 			delay: 5000,

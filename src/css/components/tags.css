@@ -16,6 +16,7 @@
 	a {
 		display: block;
 		border: 0;
+		border-radius: 4px;
 		padding: 0 4px;
 		background-color: var(--paleColor);
 
@@ -48,6 +49,14 @@
 					background-color: #ffffff;
 				}
 			}
+		}
+	}
+
+	.author & {
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 }

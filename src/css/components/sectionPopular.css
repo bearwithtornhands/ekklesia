@@ -10,8 +10,12 @@
 
 		color: #ffffff;
 
+		&:last-child {
+			margin-bottom: 0;
+		}
+
 		@media (--tablet) {
-			margin: -88px 0 80px;
+			margin-bottom: 80px;
 
 			padding: 32px;
 			border-radius: 8px;
@@ -58,6 +62,14 @@
 			@media (--tablet) {
 				margin-bottom: 0;
 			}
+		}
+	}
+
+	.sectionAccent & {
+		margin-top: -40px;
+
+		@media (--tablet) {
+			margin-top: calc(-80px - 88px);
 		}
 	}
 }

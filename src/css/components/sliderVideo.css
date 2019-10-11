@@ -1,5 +1,34 @@
 .sliderVideo {
+	& {
+		margin-bottom: 22px;
+		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 46px;
+		}
+	}
+
 	.swiper-container {
 		overflow: visible;
+
+		@media (--tablet) {
+			overflow: hidden;
+		}
+
+		@media (--desktop) {
+			overflow: visible;
+		}
+	}
+
+	.article & {
+		.swiper-container {
+			@media (--desktop) {
+				width: 588px;
+			}
+		}
 	}
 }

@@ -55,6 +55,22 @@ h3 {
 	font-weight: var(--heavy);
 }
 
+h4 {
+	margin: 24px 0;
+
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: var(--semibold);
+}
+
+h6 {
+	margin: 32px 0;
+
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: var(--semibold);
+}
+
 p {
 	margin: 20px 0;
 

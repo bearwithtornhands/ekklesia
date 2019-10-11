@@ -3,6 +3,18 @@
 		position: relative;
 	}
 
+	.swiper-wrapper {
+		margin-bottom: 0;
+
+		@media (--tablet) {
+			margin-bottom: 0;
+		}
+
+		@media (--desktop) {
+			margin-bottom: 0;
+		}
+	}
+
 	.swiper-footer {
 		@util position(absolute, auto 0 22px);
 		z-index: 1;

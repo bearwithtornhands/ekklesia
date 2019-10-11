@@ -1,26 +1,37 @@
 import Swiper from 'swiper';
 
 export default () => {
-	const SLIDER_CLASSNAME = 'js-slider-default';
-	const $sliderDefault = $(`.${SLIDER_CLASSNAME}`);
+	const SLIDER_CLASSNAME = '.js-slider-default';
 
-	if ($sliderDefault.length === 0) return;
+	if ($(SLIDER_CLASSNAME).length === 0) return;
 
-	const sliders = Object.keys($sliderDefault).reduce((acc, index) => {
-		const slider = new Swiper($sliderDefault[index], {
-			loop: false,
-			mousewheel: false,
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
+	const slider = new Swiper(SLIDER_CLASSNAME, {
+		loop: false,
+		effect: 'fade',
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev'
+		},
+		breakpoints: {
+			1264: {
+				allowTouchMove: false
 			}
-		});
+		},
+		on: {
+			slideChange: function() {
+				const { slides, activeIndex } = this;
 
-		return [...acc, slider];
-	}, []);
+				Object.keys(slides).forEach(function(index) {
+					if (+index !== activeIndex) {
+						$(slides[index]).css('opacity', '0');
+					}
+				});
+			}
+		}
+	});
 };

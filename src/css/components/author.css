@@ -1,0 +1,51 @@
+.author {
+	& {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+
+		@apply --secondaryFontStyle;
+	}
+
+	&__img {
+		margin-right: 16px;
+
+		a {
+			display: block;
+			@util size(48px);
+			border: 0;
+			border-radius: 100%;
+			overflow: hidden;
+		}
+	}
+
+	&__body {
+		flex: 1 1 0%;
+
+		h4 {
+			margin-bottom: 6px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a {
+				border-color: var(--additionalColor);
+
+				@media (--hover) {
+					&:hover {
+						border-color: transparent;
+					}
+				}
+			}
+		}
+
+		p {
+			margin: 0 0 16px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

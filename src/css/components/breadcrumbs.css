@@ -1,10 +1,12 @@
 .breadcrumbs {
 	& {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: baseline;
+		margin-bottom: 16px;
 
 		@apply --secondaryFontStyle;
+
+		@media (--tablet) {
+			margin-bottom: 32px;
+		}
 	}
 
 	a {
@@ -14,6 +16,7 @@
 	nav {
 		margin-left: 16px;
 
+		display: none;
 		position: relative;
 		padding-left: 17px;
 
@@ -26,6 +29,10 @@
 			display: block;
 			@util size(1px, 10px);
 			background-color: var(--primaryColor);
+		}
+
+		@media (--tablet) {
+			display: block;
 		}
 	}
 
@@ -64,6 +71,12 @@
 		span {
 			color: var(--additionalColor);
 		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
 	}
 
 	.pageContent & {

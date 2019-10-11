@@ -1,0 +1,39 @@
+.article {
+	& {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 160px;
+		}
+	}
+
+	&__inner {
+		@media (--desktop) {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+	}
+
+	&__aside {
+		margin-bottom: 32px;
+
+		@media (--desktop) {
+			order: 1;
+			margin-bottom: 0;
+
+			width: 346px;
+		}
+	}
+
+	&__body {
+		@media (--desktop) {
+			width: 690px;
+		}
+	}
+}

@@ -4,221 +4,616 @@
   //= ./includes/header.html
 
   <main class="pageContent">
-    <div class="outer">
-      <div class="breadcrumbs">
-        <div>
-          <a href="#">← Назад</a>
+    <div class="breadcrumbs">
+      <div class="outer">
+        <div class="breadcrumbs__inner">
+          <div>
+            <a href="#">← Назад</a>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="#">Статьи</a></li>
+              <li><span>А&nbsp;не&nbsp;включить&nbsp;ли нам свет?</span></li>
+            </ul>
+          </nav>
         </div>
-
-        <nav>
-          <ul>
-            <li><a href="#">Статьи</a></li>
-            <li><span>А&nbsp;не&nbsp;включить&nbsp;ли нам свет?</span></li>
-          </ul>
-        </nav>
       </div>
+    </div>
 
-      <h1>А&nbsp;не&nbsp;включить&nbsp;ли нам свет?</h1>
+    <article class="article">
+      <div class="outer">
+        <h1>А&nbsp;не&nbsp;включить&nbsp;ли нам свет?</h1>
 
-      <p>Веками церкви собирались при очень тусклом освещении, либо совсем без него. При проведении предрассветных или
-        ночных богослужений они пользовались свечами или факелами, или собирались при лунном свете. С&nbsp;появлением
-        электричества церкви, которые раньше собирались в&nbsp;темноте, смогли встречаться при свете ламп.</p>
+        <div class="article__inner">
+          <aside class="article__aside">
 
-      <div class="sliderDefault">
-        <div class="swiper-container js-slider-default">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="author">
+              <div class="author__img">
+                <a href="#">
+                  <img loading="lazy" src="./img/article/author.jpg" srcset="./img/article/author@2x.jpg 2x"
+                    alt="Вероника Козлова" />
+                </a>
+              </div>
+
+              <div class="author__body">
+                <h4><a href="#">Вероника Козлова</a></h4>
+                <p><span>вчера</span></p>
+
+                <div class="tags">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Культура и&nbsp;общество</a></li>
+                  </ul>
+                </div>
+
+                <nav class="socialNetworks">
+                  <ul class="socialNetworks__list">
+                    <li class="socialNetworks__item">
+                      <a href="#" target="_blank" aria-label="facebook">
+                        <span hidden>Facebook</span>
+                        <i class="i-fb"></i>
+                      </a>
+                    </li>
+                    <li class="socialNetworks__item">
+                      <a href="#" target="_blank" aria-label="vkontakte">
+                        <span hidden>vkontakte</span>
+                        <i class="i-vk"></i>
+                      </a>
+                    </li>
+                    <li class="socialNetworks__item">
+                      <a href="#" target="_blank" aria-label="twitter">
+                        <span hidden>twitter</span>
+                        <i class="i-tw"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </aside>
+
+          </aside>
+
+          <div class="article__body">
+            <h6>Веками церкви собирались при очень тусклом освещении, либо совсем без него. При проведении
+              предрассветных или ночных богослужений они пользовались свечами или факелами, или собирались при лунном
+              свете. С&nbsp;появлением электричества церкви, которые раньше собирались в&nbsp;темноте, смогли
+              встречаться при свете ламп.</h6>
+
+            <figure>
               <img loading="lazy" src="./img/slider/slide-img-1.jpg" srcset="./img/slider/slide-img-1@2x.jpg" alt="" />
+
+              <figcaption>Потом наступила эпоха рок-концертов, церквей для &laquo;ищущих&raquo; людей,
+                и&nbsp;современного
+                освещения.</figcaption>
+            </figure>
+
+            <p>И&nbsp;уже даже в&nbsp;начале 20&nbsp;века прогрессивные пасторы экспериментировали с&nbsp;потенциальными
+              преимуществами (как они думали) воздействия на&nbsp;эмоции людей посредством освещения. В&nbsp;последние
+              несколько десятилетий 20&nbsp;века молодежные лидеры приглушали освещение во&nbsp;время своих собраний,
+              думая,
+              что полумрак помогал подросткам чувствовать себя менее заметными и&nbsp;давал ощущение большего комфорта.
+              Неяркое освещение должно было дать неверующим возможность услышать Благую Весть.</p>
+            <p>Потом наступила эпоха рок-концертов, церквей для &laquo;ищущих&raquo; людей, и&nbsp;современного
+              освещения.
+              Освещение контролировали всеми возможными способами, включая изменение процента освещенности помещения.
+              Свет
+              фокусировали, свет заставляли мигать, свет заставляли двигаться. Освещение делали цветным. Полосу
+              освещения
+              сужали и&nbsp;расширяли. Впервые в&nbsp;истории стало возможно создать любое освещение, соответствующее
+              потребности или пожеланиям.</p>
+
+            <div class="sliderDefault">
+              <div class="swiper-container js-slider-default">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <figure>
+                      <img loading="lazy" src="./img/slider/slide-img-1.jpg" srcset="./img/slider/slide-img-1@2x.jpg"
+                        alt="" />
+
+                      <figcaption>Потом наступила эпоха рок-концертов, церквей для &laquo;ищущих&raquo; людей,
+                        и&nbsp;современного
+                        освещения.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <figure>
+                      <img loading="lazy" src="./img/slider/slide-img-2.jpg" srcset="./img/slider/slide-img-2@2x.jpg"
+                        alt="" />
+
+                      <figcaption>Это веские причины для того, чтобы приглушить освещение в&nbsp;помещении.</figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-footer">
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-navigation">
+                    <button type="button" class="swiper-button-prev"></button>
+                    <button type="button" class="swiper-button-next"></button>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="swiper-slide">
-              <img loading="lazy" src="./img/slider/slide-img-2.jpg" srcset="./img/slider/slide-img-2@2x.jpg" alt="" />
+            <p>Это веские причины для того, чтобы приглушить освещение в&nbsp;помещении. Но&nbsp;возможно нам
+              все&nbsp;же
+              задуматься о&nbsp;том, чтобы оставить чуть больше света в&nbsp;помещении, или даже включить свет.</p>
+            <p>Я&nbsp;признаю, что этот вопрос далеко не&nbsp;первостепенный&nbsp;&mdash; есть более важные вопросы,
+              которые должна решать церковь. Но&nbsp;возможно, что слабое освещение может иметь нежелательные
+              последствия.
+            </p>
+
+            <h3>Краткая история освещения</h3>
+
+            <p>Оценивая прославление освещенностью и&nbsp;настроением, мы&nbsp;смотрим на&nbsp;него как эмоциональное
+              переживание, которое можно создать человеческими усилиями и&nbsp;которым можно управлять, вместо того,
+              чтобы
+              считать, что прославление вдохновляется Святым Духом как наш ответ на&nbsp;откровение, которое дал
+              о&nbsp;Себе
+              Бог в&nbsp;Евангелии.</p>
+            <p>Прославление&nbsp;&mdash; это не&nbsp;просто настроение. Эстетические элементы должны поддерживать
+              и&nbsp;дополнять нашу реакцию на&nbsp;Божье Слово и&nbsp;Евангелие, а&nbsp;не&nbsp;перекрывать&nbsp;ее,
+              не&nbsp;отвлекать от&nbsp;нее и&nbsp;не&nbsp;быть для нее основой. Бог дал нам инструменты для
+              мотивирования
+              и&nbsp;влияния на&nbsp;людей: Слово, молитва, Евангелие. Он&nbsp;дал нам хлебопреломление и&nbsp;крещение
+              как
+              видимые и&nbsp;осязаемые способы помнить о&nbsp;Благой Вести и&nbsp;ее&nbsp;сути.</p>
+
+            <blockquote>
+              <p>&laquo;Прославление&nbsp;&mdash; это не&nbsp;просто настроение. Эстетические элементы должны
+                поддерживать
+                и&nbsp;дополнять нашу реакцию на&nbsp;Божье Слово и&nbsp;Евангелие&raquo;.</p>
+            </blockquote>
+
+            <p>И&nbsp;уже даже в&nbsp;начале 20&nbsp;века прогрессивные пасторы экспериментировали с&nbsp;потенциальными
+              преимуществами (как они думали) воздействия на&nbsp;эмоции людей посредством освещения. В&nbsp;последние
+              несколько десятилетий 20&nbsp;века молодежные лидеры приглушали освещение во&nbsp;время своих собраний,
+              думая,
+              что полумрак помогал подросткам чувствовать себя менее заметными и&nbsp;давал ощущение большего комфорта.
+              Неяркое освещение должно было дать неверующим возможность услышать Благую Весть.</p>
+
+            <div class="sliderVideo">
+              <div class="swiper-container js-slider-video">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="videoCard">
+                      <a href="#" class="videoCard__head">
+                        <div class="videoCard__image">
+                          <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                            alt="Рыболовный сезон и гонки 1921 года" />
+
+                          <i class="videoCard__icon i-play"></i>
+                        </div>
+
+                        <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
+                      </a>
+
+
+                      <p><span>вчера / Вероника Козлова</span></p>
+
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                          <li class="tags__item"><a href="#">Расширение</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="videoCard">
+                      <a href="#" class="videoCard__head">
+                        <div class="videoCard__image">
+                          <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                            alt="Рыболовный сезон и гонки 1921 года" />
+
+                          <i class="videoCard__icon i-play"></i>
+                        </div>
+
+                        <h3>Показательные мероприятия</h3>
+                      </a>
+
+
+                      <p><span>вчера / Вероника Козлова</span></p>
+
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="videoCard">
+                      <a href="#" class="videoCard__head">
+                        <div class="videoCard__image">
+                          <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                            alt="Рыболовный сезон и гонки 1921 года" />
+
+                          <i class="videoCard__icon i-play"></i>
+                        </div>
+
+                        <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
+                      </a>
+
+
+                      <p><span>вчера / Вероника Козлова</span></p>
+
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                          <li class="tags__item"><a href="#">Расширение</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="videoCard">
+                      <a href="#" class="videoCard__head">
+                        <div class="videoCard__image">
+                          <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                            alt="Рыболовный сезон и гонки 1921 года" />
+
+                          <i class="videoCard__icon i-play"></i>
+                        </div>
+
+                        <h3>Показательные мероприятия</h3>
+                      </a>
+
+
+                      <p><span>вчера / Вероника Козлова</span></p>
+
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="videoCard">
+                      <a href="#" class="videoCard__head">
+                        <div class="videoCard__image">
+                          <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                            alt="Рыболовный сезон и гонки 1921 года" />
+
+                          <i class="videoCard__icon i-play"></i>
+                        </div>
+
+                        <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
+                      </a>
+
+
+                      <p><span>вчера / Вероника Козлова</span></p>
+
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                          <li class="tags__item"><a href="#">Расширение</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="videoCard">
+                      <a href="#" class="videoCard__head">
+                        <div class="videoCard__image">
+                          <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                            alt="Рыболовный сезон и гонки 1921 года" />
+
+                          <i class="videoCard__icon i-play"></i>
+                        </div>
+
+                        <h3>Показательные мероприятия</h3>
+                      </a>
+
+
+                      <p><span>вчера / Вероника Козлова</span></p>
+
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-footer">
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-navigation">
+                    <button type="button" class="swiper-button-prev"></button>
+                    <button type="button" class="swiper-button-next"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p>И&nbsp;уже даже в&nbsp;начале 20&nbsp;века прогрессивные пасторы экспериментировали с&nbsp;потенциальными
+              преимуществами (как они думали) воздействия на&nbsp;эмоции людей посредством освещения. В&nbsp;последние
+              несколько десятилетий 20&nbsp;века молодежные лидеры приглушали освещение во&nbsp;время своих собраний,
+              думая,
+              что полумрак помогал подросткам чувствовать себя менее заметными и&nbsp;давал ощущение большего комфорта.
+              Неяркое освещение должно было дать неверующим возможность услышать Благую Весть.</p>
+            <p>Потом наступила эпоха рок-концертов, церквей для &laquo;ищущих&raquo; людей, и&nbsp;современного
+              освещения.
+              Освещение контролировали всеми возможными способами, включая изменение процента освещенности помещения.
+              Свет
+              фокусировали, свет заставляли мигать, свет заставляли двигаться. Освещение делали цветным. Полосу
+              освещения
+              сужали и&nbsp;расширяли. Впервые в&nbsp;истории стало возможно создать любое освещение, соответствующее
+              потребности или пожеланиям.</p>
+
+            <h3>Положительные моменты</h3>
+
+            <p>Я&nbsp;признаю, что этот вопрос далеко не&nbsp;первостепенный&nbsp;&mdash; есть более важные вопросы,
+              которые должна решать церковь. Но&nbsp;возможно, что слабое освещение может иметь нежелательные
+              последствия.</p>
+            <p>Думаю, что могу понять хотя&nbsp;бы некоторые причины, почему свет выключают:</p>
+
+            <ul>
+              <li>Это не&nbsp;дает людям отвлекаться</li>
+              <li>Это помогает людям сосредоточить внимание на&nbsp;сцене</li>
+              <li>Люди чувствуют себя комфортнее, менее заметными</li>
+              <li>В&nbsp;темноте лучше видно изображение на&nbsp;экранах</li>
+              <li>Можно использовать свет, чтобы направлять внимание людей</li>
+              <li>Сцену сложнее эффективно осветить, когда остальное помещение полностью освещено</li>
+            </ul>
+
+            <p>Это веские причины для того, чтобы приглушить освещение в&nbsp;помещении. Но&nbsp;возможно нам
+              все&nbsp;же задуматься о&nbsp;том, чтобы оставить чуть больше света в&nbsp;помещении, или даже включить
+              свет.</p>
+
+            <audio controls src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_1MG.mp3"></audio>
+
+            <p>Оценивая прославление освещенностью и&nbsp;настроением, мы&nbsp;смотрим на&nbsp;него как эмоциональное
+              переживание, которое можно создать человеческими усилиями и&nbsp;которым можно управлять, вместо того,
+              чтобы считать, что прославление вдохновляется Святым Духом как наш ответ на&nbsp;откровение, которое дал
+              о&nbsp;Себе Бог в&nbsp;Евангелии.</p>
+            <p>Прославление&nbsp;&mdash; это не&nbsp;просто настроение. Эстетические элементы должны поддерживать
+              и&nbsp;дополнять нашу реакцию на&nbsp;Божье Слово и&nbsp;Евангелие, а&nbsp;не&nbsp;перекрывать&nbsp;ее,
+              не&nbsp;отвлекать от&nbsp;нее и&nbsp;не&nbsp;быть для нее основой. Бог дал нам инструменты для
+              мотивирования и&nbsp;влияния на&nbsp;людей: Слово, молитва, Евангелие. Он&nbsp;дал нам хлебопреломление
+              и&nbsp;крещение как видимые и&nbsp;осязаемые способы помнить о&nbsp;Благой Вести и&nbsp;ее&nbsp;сути.</p>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="sectionAccent">
+      <div class="outer">
+        <div class="sectionPopular">
+          <div class="sectionList">
+            <div class="sectionList__env">
+              <div class="sectionList__title">
+                <h3>Популярные материалы</h3>
+              </div>
+
+              <div class="sectionList__link">
+                <p>
+                  <a href="#">Смотреть всё</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="sectionList__body">
+              <div class="row">
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview preview_video">
+                    <h6><a href="#">Империя должна умереть</a></h6>
+                    <p><span>Михаил Зыгарь</span></p>
+                  </div>
+                </div>
+
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview preview_video">
+                    <h6><a href="#">Рыболовный сезон и&nbsp;гонки 1921&nbsp;года</a></h6>
+                    <p><span>Вероника Козлова</span></p>
+                  </div>
+                </div>
+
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview">
+                    <h6><a href="#">Состязание с&nbsp;Haligonian и&nbsp;Gertrude L. Thebaud</a></h6>
+                    <p><span>Матвей Сафонов</span></p>
+                  </div>
+                </div>
+
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview preview_book">
+                    <h6><a href="#">Рыболовный сезон и&nbsp;гонки 1921&nbsp;года</a></h6>
+                    <p><span>Вероника Козлова</span></p>
+                  </div>
+                </div>
+
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview">
+                    <h6><a href="#">Состязание с&nbsp;Haligonian и&nbsp;Gertrude L. Thebaud</a></h6>
+                    <p><span>Матвей Сафонов</span></p>
+                  </div>
+                </div>
+
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview preview_video">
+                    <h6><a href="#">Империя должна умереть</a></h6>
+                    <p><span>Михаил Зыгарь</span></p>
+                  </div>
+                </div>
+
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview preview_book">
+                    <h6><a href="#">Рыболовный сезон и&nbsp;гонки 1921&nbsp;года</a></h6>
+                    <p><span>Вероника Козлова</span></p>
+                  </div>
+                </div>
+
+                <div class="col sm-12 md-6 lg-3">
+                  <div class="preview preview_book">
+                    <h6><a href="#">Состязание с&nbsp;Haligonian и&nbsp;Gertrude L. Thebaud</a></h6>
+                    <p><span>Матвей Сафонов</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sectionList">
+          <div class="sectionList__env">
+            <div class="sectionList__title">
+              <h2>Похожие статьи</h2>
+            </div>
+
+            <div class="sectionList__link">
+              <p>
+                <a href="#">Смотреть всё</a>
+              </p>
             </div>
           </div>
 
-          <div class="swiper-footer">
-            <div class="swiper-pagination"></div>
+          <div class="sectionList__body">
+            <div class="row">
+              <div class="col sm-12">
+                <div class="articleCard">
+                  <div class="articleCard__inner">
+                    <div class="articleCard__info">
+                      <h3><a href="#">Рыболовный сезон и&nbsp;гонки 1921&nbsp;года</a></h3>
+                      <p><span>вчера / Вероника Козлова</span></p>
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
 
-            <div class="swiper-navigation">
-              <button type="button" class="swiper-button-prev"></button>
-              <button type="button" class="swiper-button-next"></button>
+                    <div class="articleCard__description">
+                      <p>По&nbsp;условиям Международной рыбацкой гонки в&nbsp;ней могли принимать участие только
+                        настоящие
+                        рыболовецкие шхуны&nbsp;&mdash; во&nbsp;избежание победы чисто гоночного судна. Необходимым
+                        условием
+                        участия в&nbsp;гонке было проведение шхуной хотя&nbsp;бы одного полного рыболовного сезона.
+                      </p>
+                    </div>
+
+                    <div class="articleCard__image">
+                      <a href="#">
+                        <img loading="lazy" src="./img/articles/article.jpg" srcset="./img/articles/article@2x.jpg"
+                          alt="Рыболовный сезон и гонки 1921 года" />
+                      </a>
+                    </div>
+
+                    <div class="articleCard__footer">
+                      <p><span>вчера / Вероника Козлова</span></p>
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Расширение</a></li>
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col sm-12">
+                <div class="articleCard">
+                  <div class="articleCard__inner">
+                    <div class="articleCard__info">
+                      <h3><a href="#">Рыболовный сезон и&nbsp;гонки 1921&nbsp;года</a></h3>
+                      <p><span>вчера / Вероника Козлова</span></p>
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="articleCard__description">
+                      <p>По&nbsp;условиям Международной рыбацкой гонки в&nbsp;ней могли принимать участие только
+                        настоящие
+                        рыболовецкие шхуны&nbsp;&mdash; во&nbsp;избежание победы чисто гоночного судна. Необходимым
+                        условием
+                        участия в&nbsp;гонке было проведение шхуной хотя&nbsp;бы одного полного рыболовного сезона.
+                      </p>
+                    </div>
+
+                    <div class="articleCard__image">
+                      <a href="#">
+                        <img loading="lazy" src="./img/articles/article.jpg" srcset="./img/articles/article@2x.jpg"
+                          alt="Рыболовный сезон и гонки 1921 года" />
+                      </a>
+                    </div>
+
+                    <div class="articleCard__footer">
+                      <p><span>вчера / Вероника Козлова</span></p>
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Расширение</a></li>
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col sm-12">
+                <div class="articleCard">
+                  <div class="articleCard__inner">
+                    <div class="articleCard__info">
+                      <h3><a href="#">Рыболовный сезон и&nbsp;гонки 1921&nbsp;года</a></h3>
+                      <p><span>вчера / Вероника Козлова</span></p>
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="articleCard__description">
+                      <p>По&nbsp;условиям Международной рыбацкой гонки в&nbsp;ней могли принимать участие только
+                        настоящие
+                        рыболовецкие шхуны&nbsp;&mdash; во&nbsp;избежание победы чисто гоночного судна. Необходимым
+                        условием
+                        участия в&nbsp;гонке было проведение шхуной хотя&nbsp;бы одного полного рыболовного сезона.
+                      </p>
+                    </div>
+
+                    <div class="articleCard__image">
+                      <a href="#">
+                        <img loading="lazy" src="./img/articles/article.jpg" srcset="./img/articles/article@2x.jpg"
+                          alt="Рыболовный сезон и гонки 1921 года" />
+                      </a>
+                    </div>
+
+                    <div class="articleCard__footer">
+                      <p><span>вчера / Вероника Козлова</span></p>
+                      <div class="tags tags_light">
+                        <ul class="tags__list">
+                          <li class="tags__item"><a href="#">Расширение</a></li>
+                          <li class="tags__item"><a href="#">Благовестие</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="sliderVideo">
-        <div class="swiper-container js-slider-video">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="videoCard">
-                <a href="#" class="videoCard__head">
-                  <div class="videoCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="videoCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                    <li class="tags__item"><a href="#">Расширение</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="videoCard">
-                <a href="#" class="videoCard__head">
-                  <div class="videoCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="videoCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Показательные мероприятия</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="videoCard">
-                <a href="#" class="videoCard__head">
-                  <div class="videoCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="videoCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                    <li class="tags__item"><a href="#">Расширение</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="videoCard">
-                <a href="#" class="videoCard__head">
-                  <div class="videoCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="videoCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Показательные мероприятия</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="videoCard">
-                <a href="#" class="videoCard__head">
-                  <div class="videoCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="videoCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                    <li class="tags__item"><a href="#">Расширение</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="videoCard">
-                <a href="#" class="videoCard__head">
-                  <div class="videoCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="videoCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Показательные мероприятия</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-footer">
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-navigation">
-              <button type="button" class="swiper-button-prev"></button>
-              <button type="button" class="swiper-button-next"></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p>И&nbsp;уже даже в&nbsp;начале 20&nbsp;века прогрессивные пасторы экспериментировали с&nbsp;потенциальными
-        преимуществами (как они думали) воздействия на&nbsp;эмоции людей посредством освещения. В&nbsp;последние
-        несколько десятилетий 20&nbsp;века молодежные лидеры приглушали освещение во&nbsp;время своих собраний, думая,
-        что полумрак помогал подросткам чувствовать себя менее заметными и&nbsp;давал ощущение большего комфорта.
-        Неяркое освещение должно было дать неверующим возможность услышать Благую Весть.</p>
-      <p>Потом наступила эпоха рок-концертов, церквей для &laquo;ищущих&raquo; людей, и&nbsp;современного освещения.
-        Освещение контролировали всеми возможными способами, включая изменение процента освещенности помещения. Свет
-        фокусировали, свет заставляли мигать, свет заставляли двигаться. Освещение делали цветным. Полосу освещения
-        сужали и&nbsp;расширяли. Впервые в&nbsp;истории стало возможно создать любое освещение, соответствующее
-        потребности или пожеланиям.</p>
+    </div>
   </main>
 
   //= ./includes/footer.html

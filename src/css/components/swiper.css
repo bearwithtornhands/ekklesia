@@ -1,9 +1,22 @@
 :--sliders {
+	.swiper-container {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.swiper-wrapper {
-		margin-bottom: 22px;
+		margin-bottom: 6px;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 14px;
+		}
+
+		@media (--desktop) {
+			margin-bottom: 22px;
 		}
 	}
 
