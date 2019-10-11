@@ -15,7 +15,7 @@
 		}
 
 		@media (--tablet) {
-			margin-bottom: 80px;
+			margin: 0 0 80px;
 
 			padding: 32px;
 			border-radius: 8px;

@@ -1,4 +1,5 @@
 img {
+	display: block;
 	max-width: 100%;
 	height: auto;
 }
@@ -27,4 +28,9 @@ button {
 		border: 0;
 		padding: 0;
 	}
+}
+
+audio {
+	display: block;
+	width: 100%;
 }

@@ -18,7 +18,6 @@
 .i-play:before,
 .i-ribbon:before,
 .i-right:before,
-.i-tw:before,
 .i-type-article:before,
 .i-type-book:before,
 .i-type-video:before,
@@ -140,7 +139,7 @@
       display: inline-block;
       text-decoration: inherit;
     }
-  --i-tw: {
+  --i-type-article: {
       content: "\EA09";
 
       font-family: "iconfont";
@@ -153,7 +152,7 @@
       display: inline-block;
       text-decoration: inherit;
     }
-  --i-type-article: {
+  --i-type-book: {
       content: "\EA0A";
 
       font-family: "iconfont";
@@ -166,7 +165,7 @@
       display: inline-block;
       text-decoration: inherit;
     }
-  --i-type-book: {
+  --i-type-video: {
       content: "\EA0B";
 
       font-family: "iconfont";
@@ -179,7 +178,7 @@
       display: inline-block;
       text-decoration: inherit;
     }
-  --i-type-video: {
+  --i-vk: {
       content: "\EA0C";
 
       font-family: "iconfont";
@@ -192,21 +191,8 @@
       display: inline-block;
       text-decoration: inherit;
     }
-  --i-vk: {
-      content: "\EA0D";
-
-      font-family: "iconfont";
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      display: inline-block;
-      text-decoration: inherit;
-    }
   --i-yt: {
-      content: "\EA0E";
+      content: "\EA0D";
 
       font-family: "iconfont";
       font-style: normal;
@@ -229,9 +215,8 @@
 .i-play:before { content: "\EA06" }
 .i-ribbon:before { content: "\EA07" }
 .i-right:before { content: "\EA08" }
-.i-tw:before { content: "\EA09" }
-.i-type-article:before { content: "\EA0A" }
-.i-type-book:before { content: "\EA0B" }
-.i-type-video:before { content: "\EA0C" }
-.i-vk:before { content: "\EA0D" }
-.i-yt:before { content: "\EA0E" }
+.i-type-article:before { content: "\EA09" }
+.i-type-book:before { content: "\EA0A" }
+.i-type-video:before { content: "\EA0B" }
+.i-vk:before { content: "\EA0C" }
+.i-yt:before { content: "\EA0D" }

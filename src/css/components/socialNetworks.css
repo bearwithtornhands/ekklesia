@@ -2,9 +2,11 @@
 	&__list {
 		margin: 0;
 
-		display: flex;
+		display: inline-flex;
 		flex-wrap: wrap;
 		align-items: center;
+		border-radius: calc(36px / 2);
+		background-color: var(--paleColor);
 	}
 
 	&__item {
@@ -48,12 +50,16 @@
 				vertical-align: top;
 
 				line-height: 1;
+
+				transition: color var(--defaultTransitionDuration);
 			}
 
 			@media (--hover) {
 				&:hover {
 					i {
 						color: var(--accentColor);
+
+						transition: none;
 					}
 				}
 			}
@@ -61,6 +67,8 @@
 			&:focus {
 				i {
 					color: var(--accentColor);
+
+					transition: none;
 				}
 			}
 		}
@@ -68,6 +76,10 @@
 
 	&_dark {
 		.socialNetworks {
+			&__list {
+				background-color: transparent;
+			}
+
 			&__item {
 				padding: 0 5px;
 
@@ -87,16 +99,18 @@
 
 					@media (--hover) {
 						&:hover {
+							background-color: var(--accentColor);
+
 							i {
-								background-color: var(--accentColor);
 								color: #ffffff;
 							}
 						}
 					}
 
 					&:focus {
+						background-color: var(--accentColor);
+
 						i {
-							background-color: var(--accentColor);
 							color: #ffffff;
 						}
 					}

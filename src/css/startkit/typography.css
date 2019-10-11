@@ -8,6 +8,11 @@
 		font-size: 14px;
 		line-height: 22px;
 	}
+
+	--highFontStyle: {
+		font-size: 18px;
+		line-height: 34px;
+	}
 }
 
 html {
@@ -17,7 +22,10 @@ html {
 }
 
 :--heading,
-p {
+p,
+figure,
+blockquote,
+audio {
 	&:first-child {
 		margin-top: 0;
 	}
@@ -124,4 +132,82 @@ li {
 
 		transition: none;
 	}
+}
+
+figure {
+	& {
+		margin: 32px calc(var(--global-gap-small) * (-1));
+		position: relative;
+
+		@media (--tablet) {
+			margin: 56px 0;
+		}
+
+		@media (--desktop) {
+			figcaption {
+				@util position(absolute, auto -24px 0 auto);
+				transform: translateX(100%);
+
+				width: 180px;
+			}
+		}
+	}
+
+	img {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			border-radius: 8px;
+		}
+
+		@media (--desktop) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+figcaption {
+	padding: 0 var(--global-gap-small);
+
+	@apply --secondaryFontStyle;
+
+	@media (--tablet) {
+		padding: 0;
+	}
+}
+
+blockquote {
+	margin: 32px auto;
+
+	position: relative;
+	max-width: 580px;
+	padding-bottom: 17px;
+
+	@apply --highFontStyle;
+	text-align: center;
+
+	&:after {
+		content: '';
+
+		@util position(absolute, auto 0 0);
+		margin: 0 auto;
+
+		display: block;
+		@util size(200px, 1px);
+		background-color: var(--additionalColor);
+	}
+
+	@media (--tablet) {
+		margin: 48px auto;
+
+		padding-bottom: 25px;
+	}
+}
+
+audio {
+	margin: 32px 0;
 }
