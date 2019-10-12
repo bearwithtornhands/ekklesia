@@ -81,7 +81,10 @@ h6 {
 
 p {
 	margin: 20px 0;
+}
 
+:--heading,
+p {
 	span {
 		color: var(--primaryColor50);
 	}

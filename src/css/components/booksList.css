@@ -1,0 +1,31 @@
+.booksList {
+	& {
+		margin-bottom: 48px;
+
+		@media (--tablet) {
+			margin-bottom: 56px;
+		}
+	}
+
+	.row {
+		@media (--tablet) {
+			margin: -56px -17px 0;
+		}
+
+		@media (--desktop) {
+			margin: -56px -27px 0;
+		}
+	}
+
+	.col {
+		@media (--tablet) {
+			margin-top: 56px;
+
+			padding: 0 17px;
+		}
+
+		@media (--desktop) {
+			padding: 0 27px;
+		}
+	}
+}

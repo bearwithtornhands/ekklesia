@@ -17,16 +17,16 @@
 	}
 
 	p {
-		margin: 8px 0;
+		margin: 4px 0;
+
+		@media (--tablet) {
+			margin: 0;
+		}
 	}
 
 	&__head {
 		display: block;
 		border: 0;
-
-		p {
-			margin-bottom: 0;
-		}
 
 		@media (--hover) {
 			&:hover {
@@ -68,10 +68,14 @@
 	}
 
 	&__image {
-		margin-bottom: 32px;
+		margin-bottom: 24px;
 
 		max-width: 160px;
 		background-color: var(--paleColor);
+
+		@media (--tablet) {
+			margin-bottom: 32px;
+		}
 
 		img {
 			max-height: 240px;
