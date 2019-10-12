@@ -37,6 +37,10 @@
 						border-color: transparent;
 					}
 				}
+
+				&:focus {
+					border-color: transparent;
+				}
 			}
 		}
 
