@@ -1,6 +1,6 @@
 .tags {
 	& {
-		margin-bottom: 16px;
+		margin-bottom: 8px;
 
 		font-size: 9px;
 		line-height: 16px;
@@ -10,6 +10,10 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 16px;
 		}
 	}
 
@@ -57,6 +61,14 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	.book & {
+		margin-bottom: 8px;
+
+		@media (--tablet) {
+			margin-bottom: 20px;
 		}
 	}
 }

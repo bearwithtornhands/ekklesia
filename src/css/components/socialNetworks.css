@@ -37,7 +37,8 @@
 			}
 
 			.i-yt {
-				font-size: 10.5px;
+				font-size: 11px;
+				color: #ff0000;
 			}
 
 			.i-tw {
@@ -117,5 +118,9 @@
 				}
 			}
 		}
+	}
+
+	.author & {
+		margin-top: 24px;
 	}
 }

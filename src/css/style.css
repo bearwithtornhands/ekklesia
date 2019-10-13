@@ -38,3 +38,6 @@
 @import './components/article';
 @import './components/author';
 @import './components/booksList';
+@import './components/heading';
+@import './components/review';
+@import './components/book';

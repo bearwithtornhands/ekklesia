@@ -39,6 +39,10 @@
 			order: -1;
 			margin-right: 40px;
 		}
+
+		@media (--desktop) {
+			margin-right: 65px;
+		}
 	}
 
 	&__menuToggler {

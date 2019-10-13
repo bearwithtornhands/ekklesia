@@ -1,0 +1,33 @@
+.heading {
+	& {
+		margin-bottom: 24px;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		border-bottom: 1px solid var(--additionalColor);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 40px;
+		}
+	}
+
+	:--heading {
+		position: relative;
+		padding-bottom: 18px;
+
+		&:after {
+			content: '';
+
+			@util position(absolute, auto 0 -1px);
+
+			display: block;
+			height: 1px;
+			background-color: var(--accentColor);
+		}
+	}
+}

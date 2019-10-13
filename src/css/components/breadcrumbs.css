@@ -79,6 +79,16 @@
 		align-items: baseline;
 	}
 
+	&_aside {
+		.breadcrumbs {
+			&__inner {
+				@media (--desktop) {
+					padding-left: 204px;
+				}
+			}
+		}
+	}
+
 	.pageContent & {
 		margin-top: -8px;
 

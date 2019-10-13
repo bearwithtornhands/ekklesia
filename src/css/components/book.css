@@ -1,0 +1,49 @@
+.book {
+	h1 {
+		margin: 8px 0 24px;
+
+		@media (--tablet) {
+			margin: 20px 0 32px;
+		}
+	}
+
+	&__inner {
+		@media (--tablet) {
+			position: relative;
+			padding-left: 204px;
+		}
+
+		@media (--desktop) {
+			padding-right: 306px;
+		}
+	}
+
+	&__image {
+		& {
+			margin-bottom: 40px;
+
+			width: 160px;
+
+			@media (--tablet) {
+				& {
+					margin-bottom: 0;
+					@util position(absolute, 0 auto auto 0);
+				}
+			}
+		}
+
+		img {
+			box-shadow: 6px 6px 20px rgba(#000000, 24%);
+		}
+	}
+
+	&__aside {
+		@media (--desktop) {
+			& {
+				@util position(absolute, 36px 0 auto auto);
+
+				width: 244px;
+			}
+		}
+	}
+}

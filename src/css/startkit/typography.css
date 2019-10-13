@@ -145,15 +145,6 @@ figure {
 		@media (--tablet) {
 			margin: 56px 0;
 		}
-
-		@media (--desktop) {
-			figcaption {
-				@util position(absolute, auto -24px 0 auto);
-				transform: translateX(100%);
-
-				width: 180px;
-			}
-		}
 	}
 
 	img {
@@ -180,6 +171,15 @@ figcaption {
 
 	@media (--tablet) {
 		padding: 0;
+	}
+
+	@media (--desktop) {
+		& {
+			@util position(absolute, auto -24px 0 auto);
+			transform: translateX(100%);
+
+			width: 180px;
+		}
 	}
 }
 
