@@ -36,8 +36,9 @@
 @import './components/articleBanner';
 @import './components/breadcrumbs';
 @import './components/article';
-@import './components/author';
+@import './components/authorCard';
 @import './components/booksList';
 @import './components/heading';
 @import './components/review';
 @import './components/book';
+@import './components/author';

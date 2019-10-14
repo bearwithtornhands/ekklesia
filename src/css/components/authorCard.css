@@ -1,0 +1,68 @@
+.authorCard {
+	& {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 272px;
+
+		@apply --secondaryFontStyle;
+	}
+
+	&__img {
+		margin-right: 16px;
+
+		a {
+			display: block;
+			@util size(48px);
+			border: 0;
+			border-radius: 100%;
+			overflow: hidden;
+		}
+	}
+
+	&__body {
+		flex: 1 1 0%;
+
+		h4 {
+			margin-bottom: 6px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a {
+				border-color: var(--additionalColor);
+
+				@media (--hover) {
+					&:hover {
+						border-color: transparent;
+					}
+				}
+
+				&:focus {
+					border-color: transparent;
+				}
+			}
+		}
+
+		p {
+			margin: 0 0 16px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.book & {
+		margin-bottom: 40px;
+
+		@media (--tablet) {
+			margin-bottom: 32px;
+		}
+
+		@media (--desktop) {
+			margin-bottom: 0;
+		}
+	}
+}

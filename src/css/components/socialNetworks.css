@@ -75,6 +75,21 @@
 		}
 	}
 
+	&_light {
+		.socialNetworks {
+			&__list {
+				background-color: transparent;
+			}
+
+			&__item {
+				a,
+				button {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+
 	&_dark {
 		.socialNetworks {
 			&__list {
@@ -120,7 +135,7 @@
 		}
 	}
 
-	.author & {
+	.authorCard & {
 		margin-top: 24px;
 	}
 }

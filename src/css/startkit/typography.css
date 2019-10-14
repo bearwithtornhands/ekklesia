@@ -42,7 +42,7 @@ h1 {
 	line-height: 46px;
 	font-weight: var(--heavy);
 
-	@mdia (--tablet) {
+	@media (--tablet) {
 		margin-top: 32px;
 	}
 }

@@ -1,68 +1,83 @@
 .author {
 	& {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		max-width: 272px;
+		margin-bottom: 16px;
 
 		@apply --secondaryFontStyle;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (--tablet) {
+			align-items: flex-start;
+		}
+	}
+
+	&__img,
+	&__aside {
+		margin-bottom: 16px;
+
+		@media (--tablet) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__img {
-		margin-right: 16px;
+		@util size(48px);
+		border: 0;
+		border-radius: 100%;
+		overflow: hidden;
 
-		a {
-			display: block;
-			@util size(48px);
-			border: 0;
-			border-radius: 100%;
-			overflow: hidden;
+		@media (--tablet) {
+			margin-right: 24px;
 		}
 	}
 
 	&__body {
-		flex: 1 1 0%;
+		width: 100%;
 
-		h4 {
-			margin-bottom: 6px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-
-			a {
-				border-color: var(--additionalColor);
-
-				@media (--hover) {
-					&:hover {
-						border-color: transparent;
-					}
-				}
-
-				&:focus {
-					border-color: transparent;
-				}
-			}
-		}
-
+		h1,
 		p {
-			margin: 0 0 16px;
+			margin: 6px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
 
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
-	}
-
-	.book & {
-		margin-bottom: 40px;
 
 		@media (--tablet) {
-			margin-bottom: 32px;
+			margin-right: 24px;
+
+			flex: 1 1 0%;
+			width: auto;
+			padding-top: 1px;
 		}
 
 		@media (--desktop) {
-			margin-bottom: 0;
+			margin-right: 80px;
+		}
+	}
+
+	&__aside {
+		@media (--tablet) {
+			order: 1;
+
+			padding-top: 6px;
 		}
 	}
 }

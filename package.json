@@ -4,7 +4,7 @@
 	"main": "./src/js/main.js",
 	"license": "MIT",
 	"scripts": {
-		"build": "gulp prod",
+		"build": "gulp clean && gulp prod",
 		"dev": "gulp"
 	},
 	"browserslist": {
