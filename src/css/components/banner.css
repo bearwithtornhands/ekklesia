@@ -4,6 +4,24 @@
 		overflow: hidden;
 
 		color: #ffffff;
+
+		&:after {
+			content: '';
+
+			@util position(absolute, 0 0 auto 0);
+
+			height: 82px;
+			opacity: 0.5;
+			background: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0.8) 0%,
+				rgba(0, 0, 0, 0) 100%
+			);
+
+			@media (--tablet) {
+				height: 112px;
+			}
+		}
 	}
 
 	h2 {

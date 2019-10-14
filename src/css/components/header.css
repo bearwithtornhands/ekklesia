@@ -264,18 +264,5 @@
 				}
 			}
 		}
-
-		&:before {
-			content: '';
-
-			@util position(absolute, 0);
-
-			opacity: 0.5;
-			background: linear-gradient(
-				180deg,
-				rgba(0, 0, 0, 0.8) 0%,
-				rgba(0, 0, 0, 0) 100%
-			);
-		}
 	}
 }
