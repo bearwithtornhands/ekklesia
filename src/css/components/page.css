@@ -1,0 +1,11 @@
+.page {
+	&_dark {
+		background-color: var(--secondColor);
+
+		color: #ffffff;
+
+		:--inline {
+			border-bottom-color: var(--accentColor);
+		}
+	}
+}

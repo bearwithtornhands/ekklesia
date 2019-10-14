@@ -25,6 +25,8 @@
 	}
 
 	&__logo {
+		color: var(--secondColor);
+
 		a,
 		img {
 			display: inline-block;
@@ -226,6 +228,10 @@
 			&__inner {
 				position: relative;
 				z-index: 1;
+			}
+
+			&__logo {
+				color: #ffffff;
 			}
 
 			&__btnBox {

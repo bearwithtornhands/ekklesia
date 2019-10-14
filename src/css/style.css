@@ -5,7 +5,7 @@
 @import 'startkit/resets';
 @import 'startkit/typography';
 @import 'startkit/iconfont';
-@import 'startkit/pageContent';
+
 @import 'startkit/button';
 
 @import 'components/select';
@@ -13,10 +13,11 @@
 @import 'components/tags';
 @import 'components/radioList';
 
+@import 'components/page';
+@import 'components/pageContent';
 @import 'components/header';
 @import 'components/sectionList';
 @import 'components/footer';
-@import 'components/footerLogo';
 @import 'components/footerNav';
 @import 'components/articleCard';
 @import 'components/videoCard';
@@ -44,3 +45,4 @@
 @import 'components/author';
 @import 'components/authorsList';
 @import 'components/videosList';
+@import 'components/errorSection';
