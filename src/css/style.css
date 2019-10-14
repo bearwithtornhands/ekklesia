@@ -5,8 +5,9 @@
 @import 'startkit/resets';
 @import 'startkit/typography';
 @import 'startkit/iconfont';
-
+@import 'startkit/input';
 @import 'startkit/button';
+@import 'startkit/form';
 
 @import 'components/select';
 @import 'components/socialNetworks';

@@ -31,6 +31,15 @@
 @custom-selector :--button a, button, label, input;
 @custom-selector :--inline a, button, label;
 @custom-selector :--sliders .sliderDefault, .sliderBanner, .sliderVideo;
+@custom-selector :--input
+	[type='text'],
+	[type='email'],
+	[type='pessword'],
+	[type='date'],
+	[type='number'],
+	[type='search'],
+	[type='tel'],
+	textarea;
 
 @custom-media --desktop (width >= 1264px);
 @custom-media --tablet (width >= 768px);
