@@ -7,5 +7,33 @@
 		:--inline {
 			border-bottom-color: var(--accentColor);
 		}
+
+		:--button {
+			&.button {
+				border-color: rgba(#ffffff, 50%);
+
+				color: #ffffff;
+
+				@media (--hover) {
+					&:hover {
+						border-color: #ffffff;
+						background-color: #ffffff;
+
+						color: var(--accentColor);
+
+						transition: none;
+					}
+				}
+
+				&:focus {
+					border-color: #ffffff;
+					background-color: #ffffff;
+
+					color: var(--accentColor);
+
+					transition: none;
+				}
+			}
+		}
 	}
 }

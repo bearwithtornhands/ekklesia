@@ -225,11 +225,6 @@
 		}
 
 		.header {
-			&__inner {
-				position: relative;
-				z-index: 1;
-			}
-
 			&__logo {
 				color: #ffffff;
 			}
