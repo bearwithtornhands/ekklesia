@@ -13,6 +13,8 @@ export default () => {
 			el: '.swiper-pagination',
 			type: 'bullets',
 			clickable: true
+			// dynamicBullets: true,
+			// dynamicMainBullets: 1
 		},
 		navigation: {
 			nextEl: '.swiper-button-next',

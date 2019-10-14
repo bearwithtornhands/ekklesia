@@ -69,7 +69,7 @@
 		margin-top: -40px;
 
 		@media (--tablet) {
-			margin-top: calc(-80px - 88px);
+			margin-top: calc(-56px - 88px);
 		}
 	}
 }

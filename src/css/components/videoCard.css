@@ -82,6 +82,8 @@
 
 		img {
 			@util center;
+			@util size(100%);
+			object-fit: cover;
 		}
 	}
 

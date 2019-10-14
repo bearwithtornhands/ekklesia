@@ -30,11 +30,27 @@
 		text-align: center;
 
 		a {
+			position: relative;
+			display: block;
 			border: 0;
+			border-radius: 4px;
+			overflow: hidden;
+
+			&:before {
+				content: '';
+
+				@util aspect-ratio(320:200);
+
+				@media (--tablet) {
+					@util aspect-ratio(340:200);
+				}
+			}
 		}
 
 		img {
-			border-radius: 4px;
+			@util center;
+			@util size(100%);
+			object-fit: cover;
 		}
 	}
 

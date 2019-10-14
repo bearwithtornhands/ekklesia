@@ -6,6 +6,7 @@
 	}
 
 	a {
+		@util size(140px, 41px);
 		border: 0;
 		filter: grayscale(1);
 

@@ -32,6 +32,7 @@
 		}
 
 		a {
+			@util size(140px, 41px);
 			border: 0;
 		}
 

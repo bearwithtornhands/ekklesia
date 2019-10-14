@@ -1,0 +1,30 @@
+.authorsList {
+	h3 {
+		&:first-child {
+			margin-top: 0;
+		}
+
+		@media (--tablet) {
+			margin-top: 40px;
+		}
+	}
+
+	.row {
+		margin: -24px -12px 0;
+
+		@media (--tablet) {
+			margin-top: -32px;
+		}
+	}
+
+	.col {
+		margin-top: 24px;
+
+		max-width: calc(272px + 2 * 12px);
+		padding: 0 12px;
+
+		@media (--tablet) {
+			margin-top: 32px;
+		}
+	}
+}

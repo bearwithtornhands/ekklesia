@@ -34,10 +34,15 @@
 	}
 
 	&__img {
+		position: relative;
 		@util size(48px);
 		border: 0;
 		border-radius: 100%;
 		overflow: hidden;
+
+		img {
+			@util center;
+		}
 
 		@media (--tablet) {
 			margin-right: 24px;

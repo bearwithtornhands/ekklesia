@@ -1,0 +1,41 @@
+.videosList {
+	& {
+		margin-bottom: 48px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 56px;
+		}
+	}
+
+	h2 {
+		margin: 48px 0 32px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (--tablet) {
+			margin: 56px 0 40px;
+		}
+	}
+
+	.row {
+		@media (--tablet) {
+			margin-top: -56px;
+		}
+	}
+
+	.col {
+		@media (--tablet) {
+			margin-top: 56px;
+		}
+	}
+}
