@@ -1,0 +1,334 @@
+//= ./includes/head.html
+
+<div class="page">
+  //= ./includes/header.html
+
+  <main class="pageContent">
+    <div class="pageHead">
+      <div class="outer">
+        <h1><span>Вы искали</span> церковь</h1>
+      </div>
+    </div>
+
+    <div class="filterContainer">
+      <div class="outer">
+        <div class="filter">
+          <div class="filter__inner">
+            <div class="filter__item show-from-lg">
+              <div class="radioList">
+                <ul class="radioList__inner">
+                  <li class="radioList__item">
+                    <label>
+                      <input type="radio" name="type" value="articles" checked />
+                      <span>Статьи</span>
+                    </label>
+                  </li>
+                  <li class="radioList__item">
+                    <label>
+                      <input type="radio" name="type" value="videos" />
+                      <span>Видео</span>
+                    </label>
+                  </li>
+                  <li class="radioList__item">
+                    <label>
+                      <input type="radio" name="type" value="books" />
+                      <span>Книги</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="filter__item hide-on-lg">
+              <div class="select select_small js-select">
+                <select name="type">
+                  <option value="" disabled hidden>Категория</option>
+                  <option value="articles" selected>Статьи</option>
+                  <option value="videos">Видео</option>
+                  <option value="books">Книги</option>
+                </select>
+
+                <div class="select__head js-select-head"></div>
+              </div>
+            </div>
+
+            <div class="filter__item">
+              <div class="select select_small js-select">
+                <select name="theme">
+                  <option value="all" selected>Тема</option>
+                  <option value="tema1">Первая тема</option>
+                  <option value="tema2">Вторая</option>
+                  <option value="tema3">Тема третья</option>
+                </select>
+
+                <div class="select__head js-select-head"></div>
+              </div>
+            </div>
+
+            <div class="filter__item">
+              <div class="select select_small js-select">
+                <select name="tag">
+                  <option value="all" selected>Тег</option>
+                  <option value="tag1">#tag1</option>
+                  <option value="tag2">#tag2</option>
+                  <option value="tag3">#tag3</option>
+                </select>
+
+                <div class="select__head js-select-head"></div>
+              </div>
+            </div>
+
+            <div class="filter__item">
+              <div class="select select_small js-select">
+                <select name="author">
+                  <option value="all" selected>Автор</option>
+                  <option value="Veronika Kozlova">Вероника Козлова</option>
+                  <option value="Matvey Safonov">Матвей Сафонов</option>
+                  <option value="Sergey Kostuchenko">Сергей Костюченко</option>
+                </select>
+
+                <div class="select__head js-select-head"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionAccent">
+      <div class="outer">
+        <div class="videosList">
+          <h2>Культура и&nbsp;общество</h2>
+
+          <div class="row">
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
+                </a>
+
+
+                <p><span>вчера / Вероника Козлова</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                    <li class="tags__item"><a href="#">Расширение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Показательные мероприятия</h3>
+                </a>
+
+
+                <p><span>вчера / Вероника Козлова</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Состязание с&nbsp;Haligonian и&nbsp;Gertrude L. Thebaud</h3>
+                </a>
+
+
+                <p><span>28 июля / Сергей Костюченко</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                    <li class="tags__item"><a href="#">Расширение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Показательные мероприятия</h3>
+                </a>
+
+
+                <p><span>вчера / Вероника Козлова</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Состязание с&nbsp;Haligonian и&nbsp;Gertrude L. Thebaud</h3>
+                </a>
+
+
+                <p><span>28 июля / Сергей Костюченко</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                    <li class="tags__item"><a href="#">Расширение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="videosList">
+          <h2>Церковь и&nbsp;служения</h2>
+
+          <div class="row">
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
+                </a>
+
+
+                <p><span>вчера / Вероника Козлова</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                    <li class="tags__item"><a href="#">Расширение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Показательные мероприятия</h3>
+                </a>
+
+
+                <p><span>вчера / Вероника Козлова</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col sm-12 md-4 lg-3">
+              <div class="videoCard">
+                <a href="#" class="videoCard__head">
+                  <div class="videoCard__image">
+                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
+                      alt="Рыболовный сезон и гонки 1921 года" />
+
+                    <i class="videoCard__icon i-play"></i>
+                  </div>
+
+                  <h3>Состязание с&nbsp;Haligonian и&nbsp;Gertrude L. Thebaud</h3>
+                </a>
+
+
+                <p><span>28 июля / Сергей Костюченко</span></p>
+
+                <div class="tags tags_light">
+                  <ul class="tags__list">
+                    <li class="tags__item"><a href="#">Благовестие</a></li>
+                    <li class="tags__item"><a href="#">Расширение</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <div class="pagination__inner">
+            <nav>
+              <ul>
+                <!-- <li><a href="#">←</a></li> -->
+                <li><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">→</a></li>
+              </ul>
+            </nav>
+
+            <div>
+              <a href="#">Показать ещё</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  //= ./includes/footer.html
+</div>
+
+//= ./includes/scripts.html
