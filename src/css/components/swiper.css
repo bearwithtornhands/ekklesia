@@ -65,6 +65,26 @@
 			@util size(6px);
 			border-radius: 100%;
 			background-color: var(--additionalColor);
+
+			transition: background-color var(--defaultTransitionDuration);
+		}
+
+		&:focus {
+			&:before {
+				background-color: var(--accentColor);
+
+				transition: none;
+			}
+		}
+
+		@media (--hover) {
+			&:hover {
+				&:before {
+					background-color: var(--accentColor);
+
+					transition: none;
+				}
+			}
 		}
 	}
 
@@ -73,6 +93,20 @@
 			@util size(10px);
 			border: 1px solid var(--accentColor);
 			background-color: transparent;
+		}
+
+		&:focus {
+			&:before {
+				background-color: transparent;
+			}
+		}
+
+		@media (--hover) {
+			&:hover {
+				&:before {
+					background-color: transparent;
+				}
+			}
 		}
 	}
 
