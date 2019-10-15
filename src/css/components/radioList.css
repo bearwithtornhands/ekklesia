@@ -39,9 +39,26 @@
 		}
 
 		label {
-			border: 0;
+			& {
+				font-weight: var(--semibold);
+				text-decoration: none;
 
-			font-weight: var(--semibold);
+				transition: color var(--defaultTransitionDuration);
+
+				@media (--hover) {
+					&:hover {
+						color: var(--accentColor);
+
+						transition: none;
+					}
+				}
+
+				&:focus {
+					color: var(--accentColor);
+
+					transition: none;
+				}
+			}
 
 			span {
 				position: relative;

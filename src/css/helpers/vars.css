@@ -29,7 +29,7 @@
 
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 @custom-selector :--button a, button, label, input;
-@custom-selector :--inline a, button, label;
+@custom-selector :--inline a, button;
 @custom-selector :--sliders .sliderDefault, .sliderBanner, .sliderVideo;
 @custom-selector :--input
 	[type='text'],

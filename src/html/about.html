@@ -4,23 +4,78 @@
   //= ./includes/header.html
 
   <main class="pageContent">
+    <article class="about">
+      <div class="outer">
+        <h1>О&nbsp;нас</h1>
+
+        <div class="about__inner">
+          <div class="about__body">
+            <h6>Флагманский проект цифрового спортивного издательства Tribuna Digital: платформа для общения
+              о&nbsp;спорте во&nbsp;всех его проявлениях. Среднемесячная аудитория превышает 7&nbsp;миллионов
+              пользователей.</h6>
+
+            <p>флагманский проект цифрового спортивного издательства Tribuna Digital: платформа для общения
+              о&nbsp;спорте во&nbsp;всех его проявлениях. Среднемесячная аудитория превышает 7&nbsp;миллионов
+              пользователей.</p>
+
+            <p>Мы&nbsp;стремимся доставлять информацию и&nbsp;помогать общению любителей спорта во&nbsp;всех нишах
+              и&nbsp;на&nbsp;всех технологических платформах. Наша цель&nbsp;&mdash; дать каждому пользователю наиболее
+              подходящий контент и&nbsp;сервисы, для чего мы&nbsp;широко используем наши аналитические возможности.
+              Мы&nbsp;традиционно широко представлены в&nbsp;соцсетях, а&nbsp;наши приложения доминируют
+              в&nbsp;русскоязычном мобайле.</p>
+          </div>
+
+          <aside class="about__aside">
+            <form>
+              <h4>Вы можете связаться с нами через форму:</h4>
+
+              <div class="formRow">
+                <div class="inputField">
+                  <input type="email" placeholder="Электронная почта" required />
+                </div>
+              </div>
+
+              <div class="formRow">
+                <div class="inputField">
+                  <div class="select js-select">
+                    <select name="theme">
+                      <option value="all" selected>Тема</option>
+                      <option value="tema1">Первая тема</option>
+                      <option value="tema2">Вторая</option>
+                      <option value="tema3">Тема третья</option>
+                    </select>
+
+                    <div class="select__head js-select-head"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="formRow formRow_large">
+                <div class="textareaField">
+                  <textarea placeholder="Введите сообщение" required></textarea>
+                </div>
+              </div>
+
+              <div class="formRow formRow_large">
+                <label class="checkboxField">
+                  <input type="checkbox" nane="privacy" required />
+                  <span>Согласен с&nbsp;<a href="#" target="_blank">Правилами обработки информации.</a></span>
+                </label>
+              </div>
+
+              <div class="formRow">
+                <button type="submit" class="button"><span>Отправить</span></button>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </article>
     <div class="outer">
-      <h1>О&nbsp;нас</h1>
 
-      <form>
-        <div class="formRow">
-          <div class="inputField">
-            <input type="email" placeholder="Электронная почта" />
-          </div>
-        </div>
 
-        <div class="formRow">
-          <div class="inputField">
-            <textarea placeholder="Введите сообщение"></textarea>
-          </div>
-        </div>
-      </form>
-  </main>
+
+    </div>
   </main>
 
   //= ./includes/footer.html

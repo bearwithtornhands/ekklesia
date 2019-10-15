@@ -8,30 +8,35 @@
 @import 'startkit/input';
 @import 'startkit/button';
 @import 'startkit/form';
+@import 'startkit/checkbox';
 
 @import 'components/select';
 @import 'components/socialNetworks';
 @import 'components/tags';
 @import 'components/radioList';
 
-@import 'components/page';
+@import 'components/pageHead';
 @import 'components/pageContent';
+@import 'components/heading';
 @import 'components/header';
-@import 'components/sectionList';
 @import 'components/footer';
 @import 'components/footerNav';
+
+@import 'components/sectionList';
 @import 'components/articleCard';
 @import 'components/videoCard';
 @import 'components/bookCard';
 @import 'components/banner';
+@import 'components/preview';
+@import 'components/sectionPopular';
+@import 'components/sectionAccent';
+
 @import 'components/swiper';
 @import 'components/sliderDefault';
 @import 'components/sliderBanner';
 @import 'components/sliderVideo';
-@import 'components/preview';
-@import 'components/sectionPopular';
-@import 'components/sectionAccent';
-@import 'components/pageHead';
+@import 'components/page';
+
 @import 'components/filter';
 @import 'components/pagination';
 @import 'components/articlesList';
@@ -40,10 +45,11 @@
 @import 'components/article';
 @import 'components/authorCard';
 @import 'components/booksList';
-@import 'components/heading';
+
 @import 'components/review';
 @import 'components/book';
 @import 'components/author';
 @import 'components/authorsList';
 @import 'components/videosList';
 @import 'components/errorSection';
+@import 'components/about';

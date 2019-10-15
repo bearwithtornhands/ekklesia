@@ -7,7 +7,7 @@
 		justify-content: center;
 		vertical-align: baseline;
 		width: 100%;
-		min-width: 190px;
+		min-width: 152px;
 		height: 50px;
 		border: 2px solid var(--accentColor);
 		border-radius: 25px;
@@ -29,6 +29,8 @@
 		@media (--hover) {
 			&:hover {
 				background-color: #ffffff;
+				border-color: var(--accentColor);
+
 				color: var(--accentColor);
 
 				transition: none;
@@ -37,6 +39,8 @@
 
 		&:focus {
 			background-color: #ffffff;
+			border-color: var(--accentColor);
+
 			color: var(--accentColor);
 
 			transition: none;

@@ -128,8 +128,13 @@
 	&__btnBox {
 		display: none;
 
+		.button {
+			width: 100%;
+		}
+
 		@media (--tablet) {
 			display: block;
+			width: 190px;
 		}
 	}
 

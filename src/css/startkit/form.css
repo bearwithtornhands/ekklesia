@@ -6,4 +6,20 @@
 			margin-bottom: 0;
 		}
 	}
+
+	&_large {
+		margin-bottom: 32px;
+	}
+}
+
+.inputField {
+	@media (--tablet) {
+		max-width: 384px;
+	}
+}
+
+.textareaField {
+	@media (--tablet) {
+		max-width: 486px;
+	}
 }
