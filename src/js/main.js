@@ -5,10 +5,11 @@ import initSelects from './plugins/selects';
 import sliderDefault from './plugins/sliderDefault';
 import sliderBanner from './plugins/sliderBanner';
 import sliderVideo from './plugins/sliderVideo';
-import observer from './plugins/observer';
+import inputVisited from './plugins/inputVisited';
 
 $(function() {
 	setViewportUnits();
+	inputVisited();
 	initSelects();
 	sliderBanner();
 	sliderVideo();

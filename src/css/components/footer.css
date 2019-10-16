@@ -40,6 +40,8 @@
 			@util size(140px, 41px);
 			border: 0;
 
+			transition: none;
+
 			path {
 				transition: color var(--defaultTransitionDuration);
 			}

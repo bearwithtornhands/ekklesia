@@ -131,7 +131,9 @@ li {
 	color: currentColor;
 	text-decoration: none;
 
-	transition: all var(--defaultTransitionDuration);
+	transition: color var(--defaultTransitionDuration),
+		border-color var(--defaultTransitionDuration),
+		background-color var(--defaultTransitionDuration);
 
 	@media (--hover) {
 		&:hover {

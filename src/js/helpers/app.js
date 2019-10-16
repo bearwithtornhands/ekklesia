@@ -1,4 +1,4 @@
-export default app = {
+export default {
 	dom: {
 		$window: $(window),
 		$document: $(document),

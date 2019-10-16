@@ -25,7 +25,18 @@
 	}
 
 	&__logo {
-		color: var(--secondColor);
+		& {
+			color: var(--secondColor);
+
+			@media (--tablet) {
+				order: -1;
+				margin-right: 40px;
+			}
+
+			@media (--desktop) {
+				margin-right: 65px;
+			}
+		}
 
 		a,
 		img {
@@ -36,15 +47,26 @@
 		a {
 			@util size(140px, 41px);
 			border: 0;
-		}
 
-		@media (--tablet) {
-			order: -1;
-			margin-right: 40px;
-		}
+			transition: none;
 
-		@media (--desktop) {
-			margin-right: 65px;
+			path {
+				transition: color var(--defaultTransitionDuration);
+			}
+
+			@media (--hover) {
+				&:hover {
+					path {
+						transition: none;
+					}
+				}
+			}
+
+			&:focus {
+				path {
+					transition: none;
+				}
+			}
 		}
 	}
 
