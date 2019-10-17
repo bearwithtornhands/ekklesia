@@ -27,6 +27,7 @@ const imagemin = require('gulp-imagemin');
 const consolidate = require('gulp-consolidate');
 const plumber = require('gulp-plumber');
 const webpackStream = require('webpack-stream');
+const critical = require('critical');
 
 let isProd = false;
 
@@ -70,6 +71,9 @@ const path = {
 		},
 		iconFont: {
 			css: 'src/css/startkit/'
+		},
+		critical: {
+			html: 'dist/*.html'
 		}
 	}
 };
@@ -158,6 +162,40 @@ function css(cb) {
 		// )
 		.pipe(gulp.dest(path.output.css))
 		.pipe(connect.reload());
+
+	cb();
+}
+
+function criticalCSS(cb) {
+	// gulp.src('dist/*.html').pipe();
+
+	critical.generate({
+		base: path.output.html,
+		src: './index.html',
+		dest: './assets/critical.css',
+		css: [
+			'dist/assets/style.css',
+			'dist/assets/style-min-width-768-px.css',
+			'dist/assets/style-min-width-1264-px.css'
+		],
+		// inline: true,
+		extract: false,
+		minify: true,
+		dimensions: [
+			{
+				width: 320,
+				height: 500
+			},
+			{
+				width: 768,
+				height: 500
+			},
+			{
+				width: 1280,
+				height: 500
+			}
+		]
+	});
 
 	cb();
 }
@@ -291,6 +329,7 @@ const server = gulp.parallel(watchFiles, connectServer);
 const dev = gulp.series(build, server);
 const prod = gulp.series(switchToProd, build);
 
+exports.criticalCSS = criticalCSS;
 exports.js = js;
 exports.styles = styles;
 exports.clean = clean;
