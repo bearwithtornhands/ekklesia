@@ -30,13 +30,51 @@
   <meta property="twitter:image"
     content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
-  <link rel="stylesheet" media="all" href="./assets/style.css" />
-  <link rel="stylesheet" media="(min-width: 768px)" href="./assets/style-min-width-768-px.css" />
-  <link rel="stylesheet" media="(min-width: 1264px)" href="./assets/style-min-width-1264-px.css" />
-  <link rel="stylesheet" media="(hover:hover), (min-width: 1264px)"
-    href="./assets/style-hover-hover-min-width-1264.css" />
+  <!-- Styles -->
+  <link rel="preload" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'"
+    href="./assets/style.css" />
 
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  <link rel="preload" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'"
+    href="https://unpkg.com/swiper/css/swiper.min.css" />
+
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" media="(min-width: 768px)"
+    href="./assets/style-min-width-768-px.css" />
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" media="(min-width: 1264px)"
+    href="./assets/style-min-width-1264-px.css" />
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    media="(hover:hover), (min-width: 1264px)" href="./assets/style-hover-hover-min-width-1264.css" />
+
+  <noscript>
+    <link rel="stylesheet" media="all" href="./assets/style.css">
+    <link rel="stylesheet" media="(min-width: 768px)" href="./assets/style-min-width-768-px.css" />
+    <link rel="stylesheet" media="(min-width: 1264px)" href="./assets/style-min-width-1264-px.css" />
+    <link rel="stylesheet" media="(hover:hover), (min-width: 1264px)"
+      href="./assets/style-hover-hover-min-width-1264.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  </noscript>
+
+  <script>
+    (function (w) {
+      "use strict"; if (!w.loadCSS) { w.loadCSS = function () { } }
+      var rp = loadCSS.relpreload = {}; rp.support = (function () {
+        var ret; try { ret = w.document.createElement("link").relList.supports("preload") } catch (e) { ret = !1 }
+        return function () { return ret }
+      })(); rp.bindMediaToggle = function (link) {
+        var finalMedia = link.media || "all"; function enableStylesheet() {
+          if (link.addEventListener) { link.removeEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.detachEvent("onload", enableStylesheet) }
+          link.setAttribute("onload", null); link.media = finalMedia
+        }
+        if (link.addEventListener) { link.addEventListener("load", enableStylesheet) } else if (link.attachEvent) { link.attachEvent("onload", enableStylesheet) }
+        setTimeout(function () { link.rel = "stylesheet"; link.media = "only x" }); setTimeout(enableStylesheet, 3000)
+      }; rp.poly = function () {
+        if (rp.support()) { return }
+        var links = w.document.getElementsByTagName("link"); for (var i = 0; i < links.length; i++) { var link = links[i]; if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) { link.setAttribute("data-loadcss", !0); rp.bindMediaToggle(link) } }
+      }; if (!rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 500); if (w.addEventListener) { w.addEventListener("load", function () { rp.poly(); w.clearInterval(run) }) } else if (w.attachEvent) { w.attachEvent("onload", function () { rp.poly(); w.clearInterval(run) }) } }
+      if (typeof exports !== "undefined") { exports.loadCSS = loadCSS }
+      else { w.loadCSS = loadCSS }
+    }(typeof global !== "undefined" ? global : this))
+  </script>
 
   <style>
     @font-face {
@@ -77,6 +115,15 @@
       font-weight: var(--heavy);
       font-style: normal;
       font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'iconfont';
+      src: url('../fonts/icons/iconfont.woff2') format('woff2'),
+        url('../fonts/icons/iconfont.woff') format('woff');
+      font-weight: 400;
+      font-weight: normal;
+      font-style: normal;
     }
   </style>
 </head>
