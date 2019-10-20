@@ -19,6 +19,7 @@
 	&:placeholder,
 	&::-moz-placeholder {
 		color: var(--primaryColor50);
+		color: red;
 		opacity: 1;
 	}
 

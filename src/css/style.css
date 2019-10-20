@@ -20,6 +20,8 @@
 @import 'components/pageContent';
 @import 'components/heading';
 @import 'components/header';
+@import 'components/headerMenu';
+@import 'components/headerSearch';
 @import 'components/footer';
 @import 'components/footerNav';
 

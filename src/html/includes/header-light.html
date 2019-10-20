@@ -1,8 +1,8 @@
-<header class="header header_light">
+<header class="header header_light js-header">
   <div class="outer">
     <div class="header__inner">
       <div class="header__menuToggler">
-        <button type="button" aria-label="toggle menu">
+        <button type="button" aria-label="toggle menu" class="js-menu-toggler">
           <i></i>
           <span>Меню</span>
         </button>
@@ -29,30 +29,40 @@
       </div>
 
       <div class="header__nav">
-        <nav>
-          <ul>
-            <li><a href="articles.html">Статьи</a></li>
-            <li><a href="videos.html">Видео</a></li>
-            <li><a href="books.html">Книги</a></li>
-          </ul>
+        <div class="headerMenu js-menu">
+          <div class="headerMenu__inner">
+            <nav>
+              <ul>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="videos.html">Видео</a></li>
+                <li><a href="books.html">Книги</a></li>
+              </ul>
 
-          <ul>
-            <li><a href="authors.html">Авторы</a></li>
-            <li><a href="themes.html">Темы</a></li>
-          </ul>
+              <ul>
+                <li><a href="authors.html">Авторы</a></li>
+                <li><a href="themes.html">Темы</a></li>
+              </ul>
 
-          <ul>
-            <li><span>Конференции</span></li>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="about.html">О&nbsp;нас</a></li>
-          </ul>
-        </nav>
+              <ul>
+                <li><span>Конференции</span></li>
+                <li><a href="#">Обучение</a></li>
+                <li><a href="about.html">О&nbsp;нас</a></li>
+              </ul>
+            </nav>
+
+            <footer>
+              <button type="button" class="button button_second">
+                <span>Пожертвовать</span>
+              </button>
+            </footer>
+          </div>
+        </div>
       </div>
 
-      <div class="header__search">
-        <button type="button" aria-label="open the search">
+      <div class="header__searchToggler">
+        <button type="button" aria-label="open the search" class="js-search-toggler">
+          <i></i>
           <span hidden>Поиск</span>
-          <i class="i-loupe"></i>
         </button>
       </div>
 
@@ -60,6 +70,36 @@
         <button type="button" class="button button_second">
           <span>Пожертвовать</span>
         </button>
+      </div>
+
+      <div class="header__search">
+        <div class="headerSearch js-search">
+          <div class="outer">
+            <div class="headerSearch__inner">
+              <div class="headerSearch__form">
+                <form class="form">
+                  <div class="form__submit">
+                    <button type="submit" aria-label="Send my request">
+                      <span hidden>Найти</span>
+                      <i class="i-loupe"></i>
+                    </button>
+                  </div>
+
+                  <div class="formField">
+                    <input type="text" placeholder="Поиск" required />
+                  </div>
+                </form>
+              </div>
+
+              <div class="headerSearch__close">
+                <button type="button" aria-label="Закрыть окно поиска" class="js-search-toggler">
+                  <span hidden>Закрыть</span>
+                  <i class="i-cross"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
