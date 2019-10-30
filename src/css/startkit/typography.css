@@ -103,25 +103,47 @@ p {
 	}
 }
 
-ul {
+ul,
+ol {
 	@util reset-list;
 	margin: 0 0 20px;
 }
 
-li {
-	margin: 0;
+ul {
+	li {
+		margin: 0;
 
-	position: relative;
-	padding-left: 14px;
+		position: relative;
+		padding-left: 14px;
 
-	&:before {
-		content: '';
+		&:before {
+			content: '';
 
-		@util position(absolute, 14px null null 0);
+			@util position(absolute, 14px null null 0);
 
-		display: block;
-		@util size(7px, 1px);
-		background-color: var(--accentColor);
+			display: block;
+			@util size(7px, 1px);
+			background-color: var(--accentColor);
+		}
+	}
+}
+
+ol {
+	counter-reset: counterOfNumberedList;
+
+	li {
+		margin: 0;
+
+		position: relative;
+		padding-left: 14px;
+		counter-increment: counterOfNumberedList;
+
+		&:before {
+			@util position(absolute, 0 auto auto 0);
+
+			content: counter(counterOfNumberedList);
+			color: var(--accentColor);
+		}
 	}
 }
 
