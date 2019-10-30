@@ -1,0 +1,84 @@
+.conferenceHead {
+	& {
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-color: var(--secondColor);
+
+		color: #ffffff;
+
+		&:before {
+			content: '';
+
+			@util position(absolute, 0 0 auto 0);
+
+			height: 82px;
+			opacity: 0.5;
+			background: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0.8) 0%,
+				rgba(0, 0, 0, 0) 100%
+			);
+
+			@media (--tablet) {
+				height: 112px;
+			}
+		}
+	}
+
+	h1 {
+		& {
+			margin: 0 0 24px;
+
+			@media (--tablet) {
+				margin-bottom: 28px;
+
+				font-size: 88px;
+				line-height: 86px;
+			}
+		}
+
+		i {
+			font-family: var(--serifFont);
+		}
+	}
+
+	h3 {
+		display: none;
+
+		@media (--tablet) {
+			margin: 0 0 8px;
+
+			display: block;
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+
+	&__inner {
+		padding: 106px 0 62px;
+
+		@media (--tablet) {
+			height: 100vh;
+			height: calc(var(--vh, 1vh) * 100);
+			min-height: 750px;
+			max-height: 950px;
+			padding: 152px 0 168px;
+		}
+
+		@media (--desktop) {
+			padding: 160px 0 136px;
+		}
+	}
+
+	&__btnBox {
+		margin-bottom: 32px;
+
+		@media (--tablet) {
+			margin-bottom: 60px;
+		}
+	}
+}

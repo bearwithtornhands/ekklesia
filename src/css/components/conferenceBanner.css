@@ -1,0 +1,15 @@
+.conferenceBanner {
+	& {
+		margin-bottom: 128px;
+
+		@media (--tablet) {
+			margin-bottom: 80px;
+		}
+	}
+
+	.conferenceHead + & {
+		@media (--tablet) {
+			margin-top: -88px;
+		}
+	}
+}

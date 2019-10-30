@@ -25,21 +25,23 @@
 	}
 
 	h2 {
-		margin: 0 0 24px;
+		& {
+			margin: 0 0 24px;
 
-		font-size: 38px;
-		line-height: 46px;
-		font-weight: var(--bold);
+			font-size: 38px;
+			line-height: 46px;
+			font-weight: var(--bold);
+
+			@media (--tablet) {
+				margin-bottom: 32px;
+
+				font-size: 88px;
+				line-height: 86px;
+			}
+		}
 
 		i {
 			font-family: var(--serifFont);
-		}
-
-		@media (--tablet) {
-			margin-bottom: 32px;
-
-			font-size: 88px;
-			line-height: 86px;
 		}
 	}
 
@@ -58,15 +60,15 @@
 	}
 
 	&__image {
-		@util position(absolute, 0);
+		& {
+			@util position(absolute, 0);
+		}
 
 		img {
 			@util size(100%);
 			object-fit: cover;
-		}
 
-		@supports not (object-fit: cover) {
-			img {
+			@supports not (object-fit: cover) {
 				@util center;
 				@util size(auto);
 				max-width: none;

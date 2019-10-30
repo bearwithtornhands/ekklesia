@@ -1,35 +1,37 @@
 .sectionAccent {
-	margin: 40px 0;
+	& {
+		margin: 40px 0;
 
-	padding: 40px 0 48px;
-	background-color: var(--paleColor);
+		padding: 40px 0 48px;
+		background-color: var(--paleColor);
 
-	&:first-child {
-		margin-top: 0;
-	}
-
-	&:last-child {
-		margin-bottom: calc(var(--content-bottom-gap-small) * (-1));
-	}
-
-	@media (--tablet) {
-		margin: 80px 0;
-
-		padding: 56px 0 80px;
-		border-bottom-left-radius: 64px;
-
-		&:last-child {
-			margin-bottom: calc(var(--content-bottom-gap-medium) * (-1));
-
-			border-bottom-left-radius: 0;
+		&:first-child {
+			margin-top: 0;
 		}
-	}
-
-	@media (--desktop) {
-		border-bottom-left-radius: 120px;
 
 		&:last-child {
+			margin-bottom: calc(var(--content-bottom-gap-small) * (-1));
+		}
+
+		@media (--tablet) {
+			margin: 80px 0;
+
+			padding: 56px 0 80px;
+			border-bottom-left-radius: 64px;
+
+			&:last-child {
+				margin-bottom: calc(var(--content-bottom-gap-medium) * (-1));
+
+				border-bottom-left-radius: 0;
+			}
+		}
+
+		@media (--desktop) {
 			border-bottom-left-radius: 120px;
+
+			&:last-child {
+				border-bottom-left-radius: 120px;
+			}
 		}
 	}
 
@@ -42,6 +44,10 @@
 	}
 
 	.pageHead + & {
+		margin-top: 0;
+	}
+
+	.conferenceHead + & {
 		margin-top: 0;
 	}
 }

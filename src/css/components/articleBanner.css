@@ -177,4 +177,12 @@
 			}
 		}
 	}
+
+	.sectionAccent & {
+		margin: -40px 0 40px;
+
+		@media (--tablet) {
+			margin: calc(-56px - 88px) 0 80px;
+		}
+	}
 }

@@ -28,7 +28,7 @@
 
 		@media (--hover) {
 			&:hover {
-				background-color: #ffffff;
+				background-color: transparent;
 				border-color: var(--accentColor);
 
 				color: var(--accentColor);
@@ -38,7 +38,7 @@
 		}
 
 		&:focus {
-			background-color: #ffffff;
+			background-color: transparent;
 			border-color: var(--accentColor);
 
 			color: var(--accentColor);

@@ -56,3 +56,5 @@
 @import 'components/videosList';
 @import 'components/errorSection';
 @import 'components/about';
+@import 'components/conferenceHead';
+@import 'components/conferenceBanner';
