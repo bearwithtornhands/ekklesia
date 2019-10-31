@@ -3,6 +3,9 @@
 		margin: 40px 0;
 
 		padding: 40px 0 48px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 		background-color: var(--paleColor);
 
 		&:first-child {
@@ -33,6 +36,10 @@
 				border-bottom-left-radius: 120px;
 			}
 		}
+	}
+
+	&_dark {
+		color: #ffffff;
 	}
 
 	.sliderBanner + & {

@@ -1,0 +1,41 @@
+.conferenceDescription {
+	& {
+		font-size: 14px;
+		line-height: 28px;
+	}
+
+	h2 {
+		margin: 0 0 24px;
+
+		@media (--tablet) {
+			margin-bottom: 40px;
+		}
+	}
+
+	p {
+		@media (--desktop) {
+			margin: 0;
+
+			width: 384px;
+		}
+	}
+
+	&__img {
+		margin: 0 auto 16px;
+
+		@media (--desktop) {
+			margin-bottom: 0;
+
+			flex: 1 1 0%;
+		}
+	}
+
+	&__inner {
+		@media (--desktop) {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding-right: 101px;
+		}
+	}
+}

@@ -58,3 +58,5 @@
 @import 'components/about';
 @import 'components/conferenceHead';
 @import 'components/conferenceBanner';
+@import 'components/conferenceDescription';
+@import 'components/conferenceLineUp';

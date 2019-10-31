@@ -34,25 +34,41 @@
 	}
 
 	&__img {
-		position: relative;
-		@util size(48px);
-		border: 0;
-		border-radius: 100%;
-		overflow: hidden;
+		& {
+			position: relative;
+			@util size(48px);
+			border: 0;
+			border-radius: 100%;
+			overflow: hidden;
+
+			@media (--tablet) {
+				margin-right: 24px;
+			}
+		}
 
 		img {
 			@util center;
 		}
-
-		@media (--tablet) {
-			margin-right: 24px;
-		}
 	}
 
 	&__body {
-		width: 100%;
+		& {
+			width: 100%;
 
-		h1,
+			@media (--tablet) {
+				margin-right: 24px;
+
+				flex: 1 1 0%;
+				width: auto;
+				padding-top: 1px;
+			}
+
+			@media (--desktop) {
+				margin-right: 80px;
+			}
+		}
+
+		h4,
 		p {
 			margin: 6px 0;
 
@@ -63,18 +79,6 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
-		}
-
-		@media (--tablet) {
-			margin-right: 24px;
-
-			flex: 1 1 0%;
-			width: auto;
-			padding-top: 1px;
-		}
-
-		@media (--desktop) {
-			margin-right: 80px;
 		}
 	}
 

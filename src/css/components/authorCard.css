@@ -58,6 +58,32 @@
 		}
 	}
 
+	&_large {
+		& {
+			@media (--tablet) {
+				display: block;
+			}
+		}
+
+		.authorCard {
+			&__img {
+				& {
+					@media (--tablet) {
+						margin: 0 0 24px;
+					}
+				}
+
+				a {
+					@media (--tablet) {
+						& {
+							@util size(200px);
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.book & {
 		margin-bottom: 40px;
 
