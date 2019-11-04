@@ -178,7 +178,7 @@
 		}
 	}
 
-	.sectionAccent & {
+	.conference .sectionAccent & {
 		margin: -40px 0 40px;
 
 		@media (--tablet) {
