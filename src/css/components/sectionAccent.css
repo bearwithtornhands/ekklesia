@@ -57,4 +57,9 @@
 	.conferenceHead + & {
 		margin-top: 0;
 	}
+
+	.conference & {
+		position: relative;
+		z-index: 1;
+	}
 }

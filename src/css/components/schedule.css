@@ -1,0 +1,49 @@
+.schedule {
+	& {
+		margin-bottom: 32px;
+
+		width: auto;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	caption {
+		margin-bottom: 24px;
+
+		border-bottom: 1px solid var(--additionalColor);
+		padding-bottom: 12px;
+
+		text-align: left;
+		font-weight: var(--medium);
+
+		@media (--tablet) {
+			margin-bottom: 32px;
+
+			padding-bottom: 20px;
+		}
+	}
+
+	td {
+		& {
+			padding: 0 10px;
+			vertical-align: baseline;
+
+			@media (--tablet) {
+				padding: 0 5px;
+			}
+		}
+
+		&:first-child {
+			padding-left: 0;
+
+			color: var(--accentColor);
+			white-space: nowrap;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}

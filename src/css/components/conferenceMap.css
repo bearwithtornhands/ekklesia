@@ -1,0 +1,21 @@
+.conferenceMap {
+	& {
+		display: none;
+
+		@media (--tablet) {
+			margin-bottom: calc(var(--content-bottom-gap-medium) * (-1));
+
+			display: block;
+		}
+	}
+
+	&__inner {
+		height: 630px;
+	}
+
+	.sectionAccent + & {
+		@media (--tablet) {
+			margin-top: -64px;
+		}
+	}
+}

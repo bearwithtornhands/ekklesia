@@ -56,11 +56,15 @@ h2 {
 }
 
 h3 {
-	margin: 32px 0;
+	margin: 32px 0 24px;
 
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: var(--heavy);
+
+	@media (--tablet) {
+		margin-top: 40px;
+	}
 }
 
 h4 {
@@ -87,10 +91,6 @@ h6 {
 	}
 }
 
-p {
-	margin: 20px 0;
-}
-
 :--heading {
 	span {
 		color: var(--additionalColor);
@@ -98,8 +98,16 @@ p {
 }
 
 p {
+	& {
+		margin: 20px 0;
+	}
+
 	span {
 		color: var(--primaryColor50);
+	}
+
+	b {
+		font-weight: var(--medium);
 	}
 }
 

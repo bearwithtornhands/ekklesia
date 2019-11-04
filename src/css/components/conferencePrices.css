@@ -1,0 +1,19 @@
+.conferencePrices {
+	&__head {
+		& {
+			margin-bottom: 40px;
+
+			max-width: 588px;
+
+			font-weight: var(--semibold);
+		}
+
+		h2 {
+			margin-bottom: 24px;
+
+			@media (--tablet) {
+				margin-bottom: 32px;
+			}
+		}
+	}
+}

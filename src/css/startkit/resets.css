@@ -34,3 +34,9 @@ audio {
 	display: block;
 	width: 100%;
 }
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+}

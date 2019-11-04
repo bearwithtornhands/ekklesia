@@ -7,6 +7,7 @@ import sliderDefault from './plugins/sliderDefault';
 import sliderBanner from './plugins/sliderBanner';
 import sliderVideo from './plugins/sliderVideo';
 import inputVisited from './plugins/inputVisited';
+import conferenceMap from './plugins/conferenceMap';
 
 $(function() {
 	header();
@@ -16,4 +17,5 @@ $(function() {
 	sliderBanner();
 	sliderVideo();
 	sliderDefault();
+	conferenceMap();
 });

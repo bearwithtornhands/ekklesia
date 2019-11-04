@@ -1,0 +1,14 @@
+.priceList {
+	.row {
+		margin: -24px -12px 0;
+
+		align-items: stretch;
+	}
+
+	.col {
+		margin-top: 24px;
+
+		display: flex;
+		padding: 0 12px;
+	}
+}
