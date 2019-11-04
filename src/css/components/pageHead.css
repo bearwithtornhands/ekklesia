@@ -1,9 +1,38 @@
 .pageHead {
 	& {
-		margin-bottom: 24px;
+		margin-bottom: 28px;
 
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	h1,
+	p {
+		max-width: 690px;
+	}
+
+	h1 {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	p {
+		margin: 8px 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.filterContainer & {
+		margin-bottom: 24px;
 	}
 }

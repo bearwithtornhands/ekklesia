@@ -4,10 +4,30 @@
   //= ./includes/header.html
 
   <main class="pageContent">
+    <div class="breadcrumbs">
+      <div class="outer">
+        <div class="breadcrumbs__inner">
+          <div>
+            <a href="archive.html">← Назад</a>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="archive.html">Конференции</a></li>
+              <li><span>Семья служителя</span></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
     <div class="filterContainer">
       <div class="outer">
         <div class="pageHead">
-          <h1>Темы</h1>
+          <h1>Семья служителя</h1>
+
+          <p>Флагманский проект цифрового спортивного издательства Tribuna Digital: платформа для общения о&nbsp;спорте
+            во&nbsp;всех его проявлениях. Среднемесячная аудитория превышает 7&nbsp;миллионов пользователей.</p>
         </div>
 
         <div class="filter">
@@ -17,13 +37,13 @@
                 <ul class="radioList__inner">
                   <li class="radioList__item">
                     <label>
-                      <input type="radio" name="type" value="articles" checked />
+                      <input type="radio" name="type" value="articles" />
                       <span>Статьи</span>
                     </label>
                   </li>
                   <li class="radioList__item">
                     <label>
-                      <input type="radio" name="type" value="videos" />
+                      <input type="radio" name="type" value="videos" checked />
                       <span>Видео</span>
                     </label>
                   </li>
@@ -35,32 +55,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
 
-            <div class="filter__item hide-on-lg">
-              <div class="select select_small js-select">
-                <select name="type">
-                  <option value="" disabled hidden>Категория</option>
-                  <option value="articles" selected>Статьи</option>
-                  <option value="videos">Видео</option>
-                  <option value="books">Книги</option>
-                </select>
-
-                <div class="select__head js-select-head"></div>
-              </div>
-            </div>
-
-            <div class="filter__item">
-              <div class="select select_small js-select">
-                <select>
-                  <option value="all" selected>Автор</option>
-                  <option value="Veronika Kozlova">Вероника Козлова</option>
-                  <option value="Matvey Safonov">Матвей Сафонов</option>
-                  <option value="Sergey Kostuchenko">Сергей Костюченко</option>
-                </select>
-
-                <div class="select__head js-select-head"></div>
-              </div>
             </div>
           </div>
         </div>
@@ -70,8 +65,6 @@
     <div class="sectionAccent">
       <div class="outer">
         <div class="videosList">
-          <h2>Культура и&nbsp;общество</h2>
-
           <div class="row">
             <div class="col sm-12 md-4 lg-3">
               <div class="mediaCard mediaCard_video">
@@ -137,86 +130,6 @@
 
 
                 <p><span>28 июля / Сергей Костюченко</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                    <li class="tags__item"><a href="#">Расширение</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col sm-12 md-4 lg-3">
-              <div class="mediaCard mediaCard_video">
-                <a href="#" class="mediaCard__head">
-                  <div class="mediaCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="mediaCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Показательные мероприятия</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col sm-12 md-4 lg-3">
-              <div class="mediaCard mediaCard_video">
-                <a href="#" class="mediaCard__head">
-                  <div class="mediaCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="mediaCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Состязание с&nbsp;Haligonian и&nbsp;Gertrude L. Thebaud</h3>
-                </a>
-
-
-                <p><span>28 июля / Сергей Костюченко</span></p>
-
-                <div class="tags tags_light">
-                  <ul class="tags__list">
-                    <li class="tags__item"><a href="#">Благовестие</a></li>
-                    <li class="tags__item"><a href="#">Расширение</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="videosList">
-          <h2>Церковь и&nbsp;служения</h2>
-
-          <div class="row">
-            <div class="col sm-12 md-4 lg-3">
-              <div class="mediaCard mediaCard_video">
-                <a href="#" class="mediaCard__head">
-                  <div class="mediaCard__image">
-                    <img loading="lazy" src="./img/videos/video-1.jpg"" srcset=" ./img/videos/video-1@2x.jpg 2x"
-                      alt="Рыболовный сезон и гонки 1921 года" />
-
-                    <i class="mediaCard__icon i-play"></i>
-                  </div>
-
-                  <h3>Рыболовный сезон и&nbsp;гонки 1921 года</h3>
-                </a>
-
-
-                <p><span>вчера / Вероника Козлова</span></p>
 
                 <div class="tags tags_light">
                   <ul class="tags__list">

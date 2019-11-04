@@ -27,7 +27,7 @@
 
 @import 'components/sectionList';
 @import 'components/articleCard';
-@import 'components/videoCard';
+@import 'components/mediaCard';
 @import 'components/bookCard';
 @import 'components/banner';
 @import 'components/preview';
