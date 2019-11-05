@@ -1,7 +1,10 @@
 import app from '../helpers/app';
 
 export default () => {
-	if (window.innerWidth >= app.breakpoints.tablet) {
+	if (
+		window.innerWidth >= app.breakpoints.tablet &&
+		$('#conferenceMap').length
+	) {
 		ymaps.ready(() => {
 			const conferenceMap = new ymaps.Map('conferenceMap', {
 				center: [55.76, 37.64],

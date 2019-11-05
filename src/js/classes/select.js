@@ -39,7 +39,7 @@ export default class Select {
 	};
 
 	getSelectedText = () => {
-		return $(':selected', this.$select).text();
+		return $('option:selected', this.$select).text();
 	};
 
 	setHeadText = () => {
@@ -47,7 +47,7 @@ export default class Select {
 	};
 
 	setContainerState = () => {
-		const isDefaultValue = $(':selected', this.$select).index() === 0;
+		const isDefaultValue = $('option:selected', this.$select).index() === 0;
 
 		this.$container.toggleClass(this.classNames.ACTIVE_MOD, !isDefaultValue);
 	};
