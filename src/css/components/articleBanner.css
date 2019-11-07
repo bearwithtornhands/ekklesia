@@ -114,6 +114,7 @@
 
 			span {
 				position: relative;
+				display: inline-block;
 				border-bottom: 1px solid var(--accentColor);
 
 				font-weight: var(--medium);
@@ -179,10 +180,12 @@
 	}
 
 	.conference .sectionAccent & {
-		margin: -40px 0 40px;
+		margin-top: -40px;
+		margin-bottom: 40px;
 
 		@media (--tablet) {
-			margin: calc(-56px - 88px) 0 80px;
+			margin-top: calc(-56px - 88px);
+			margin-bottom: 80px;
 		}
 	}
 }

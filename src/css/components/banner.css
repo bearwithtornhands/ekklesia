@@ -47,6 +47,7 @@
 
 	a {
 		position: relative;
+		display: inline-block;
 		border-bottom-color: var(--accentColor);
 
 		font-weight: var(--medium);

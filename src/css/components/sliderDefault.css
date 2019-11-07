@@ -1,14 +1,18 @@
 .sliderDefault {
 	& {
-		margin-bottom: 22px;
+		margin: 40px 0 22px;
 		position: relative;
+
+		&:first-child {
+			margin-top: 0;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
 		}
 
 		@media (--tablet) {
-			margin-bottom: 46px;
+			margin: 56px 0 46px;
 		}
 	}
 

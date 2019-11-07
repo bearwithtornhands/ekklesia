@@ -8,13 +8,12 @@ export default () => {
 	const slider = new Swiper(SLIDER_CLASSNAME, {
 		loop: false,
 		slidesPerView: 1,
+		slidesPerGroup: 1,
 		spaceBetween: 8,
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
 			clickable: true
-			// dynamicBullets: true,
-			// dynamicMainBullets: 1
 		},
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -23,10 +22,12 @@ export default () => {
 		breakpoints: {
 			768: {
 				slidesPerView: 3,
+				slidesPerGroup: 3,
 				spaceBetween: 24
 			},
 			1264: {
 				slidesPerView: 2,
+				slidesPerGroup: 3,
 				spaceBetween: 24,
 				allowTouchMove: false
 			}

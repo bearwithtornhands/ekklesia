@@ -23,6 +23,8 @@ html {
 
 :--heading,
 p,
+ul,
+ol,
 figure,
 blockquote,
 audio {
@@ -109,12 +111,17 @@ p {
 	b {
 		font-weight: var(--medium);
 	}
+
+	& + ul,
+	& + ol {
+		margin-top: -16px;
+	}
 }
 
 ul,
 ol {
 	@util reset-list;
-	margin: 0 0 20px;
+	margin: 20px 0;
 }
 
 ul {

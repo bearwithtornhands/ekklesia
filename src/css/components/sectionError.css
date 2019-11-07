@@ -1,4 +1,4 @@
-.errorSection {
+.sectionError {
 	h1,
 	p {
 		margin: 12px 0;
@@ -24,6 +24,7 @@
 
 		a {
 			position: relative;
+			display: inline-block;
 			border-bottom-color: var(--accentColor);
 
 			font-weight: var(--medium);

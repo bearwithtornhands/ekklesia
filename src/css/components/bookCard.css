@@ -33,7 +33,7 @@
 				.bookCard {
 					&__image {
 						img {
-							box-shadow: 0 0 10px 0 rgba(#000000, 32%);
+							box-shadow: 2px 2px 20px rgba(#bc0e23, 24%);
 
 							transition: none;
 						}
@@ -46,7 +46,7 @@
 			.bookCard {
 				&__image {
 					img {
-						box-shadow: 0 0 10px 0 rgba(#000000, 32%);
+						box-shadow: 2px 2px 20px rgba(#bc0e23, 24%);
 
 						transition: none;
 					}

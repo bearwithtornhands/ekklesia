@@ -26,6 +26,7 @@ export default class HeaderTools {
 			this.$header
 		);
 		this.$search = $(`.${this.defaultClassNames.SEARCH}`, this.$header);
+		this.$searchField = $('[type="text"]', this.$search);
 	}
 
 	init = () => {
@@ -69,6 +70,7 @@ export default class HeaderTools {
 			} else {
 				disableBodyScroll(this.$search);
 				this.setSearchOpen();
+				this.$searchField.focus();
 			}
 		});
 	};
