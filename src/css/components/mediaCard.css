@@ -68,45 +68,4 @@
 
 		font-size: 42px;
 	}
-
-	&_video {
-		.mediaCard {
-			&__head {
-				@media (--hover) {
-					&:hover {
-						.mediaCard {
-							&__image {
-								&:after {
-									background-color: rgba(#ffffff, 0%);
-								}
-							}
-						}
-					}
-				}
-
-				&:focus {
-					.mediaCard {
-						&__image {
-							&:after {
-								background-color: rgba(#ffffff, 0%);
-							}
-						}
-					}
-				}
-			}
-
-			&__image {
-				&:after {
-					content: '';
-
-					@util position(absolute, 0);
-					background-color: rgba(#ffffff, 50%);
-
-					display: block;
-
-					transition: background-color var(--defaultTransitionDuration);
-				}
-			}
-		}
-	}
 }
