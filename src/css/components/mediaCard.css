@@ -49,10 +49,16 @@
 			}
 		}
 
+		iframe,
 		img {
 			@util center;
 			@util size(100%);
 			object-fit: cover;
+		}
+
+		iframe {
+			display: block;
+			@util size(100%);
 		}
 	}
 
