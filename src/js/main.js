@@ -8,12 +8,14 @@ import sliderBanner from './plugins/sliderBanner';
 import sliderVideo from './plugins/sliderVideo';
 import inputVisited from './plugins/inputVisited';
 import conferenceMap from './plugins/conferenceMap';
+import videoCards from './plugins/videoCards';
 
 $(function() {
 	header();
 	setViewportUnits();
 	inputVisited();
 	initSelects();
+	videoCards();
 	sliderBanner();
 	sliderVideo();
 	sliderDefault();

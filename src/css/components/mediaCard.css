@@ -22,13 +22,6 @@
 		margin: 8px 0;
 	}
 
-	&__head {
-		margin-bottom: 16px;
-
-		display: block;
-		border: 0;
-	}
-
 	&__image {
 		margin-bottom: 32px;
 
@@ -50,10 +43,9 @@
 		}
 
 		iframe,
-		img {
+		a {
 			@util center;
 			@util size(100%);
-			object-fit: cover;
 		}
 
 		iframe {
@@ -62,10 +54,50 @@
 		}
 	}
 
-	&__icon {
-		@util center;
-		z-index: 1;
+	&__link {
+		& {
+			display: block;
+			border: 0;
+			cursor: pointer;
+		}
 
-		font-size: 42px;
+		&:after {
+			@util center;
+			z-index: 1;
+
+			@apply --i-play;
+			font-size: 42px;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@util size(100%);
+			background-color: rgba(255, 255, 255, 0.5);
+
+			transition: background-color var(--defaultTransitionDuration);
+		}
+
+		&:focus {
+			&:after {
+				background-color: transparent;
+
+				transition: none;
+			}
+		}
+
+		&:hover {
+			&:after {
+				@media (--hover) {
+					background-color: transparent;
+
+					transition: none;
+				}
+			}
+		}
+
+		img {
+			@util size(100%);
+			object-fit: cover;
+		}
 	}
 }
