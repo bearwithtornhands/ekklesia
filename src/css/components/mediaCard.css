@@ -23,14 +23,16 @@
 	}
 
 	&__image {
-		margin-bottom: 32px;
+		& {
+			margin-bottom: 32px;
 
-		position: relative;
-		border-radius: 4px;
-		overflow: hidden;
-		background-color: var(--paleColor);
+			position: relative;
+			border-radius: 4px;
+			overflow: hidden;
+			background-color: var(--additionalColor);
 
-		text-align: center;
+			text-align: center;
+		}
 
 		&:before {
 			content: '';
@@ -42,15 +44,15 @@
 			}
 		}
 
+		/* uncss:ignore */
 		iframe,
 		a {
 			@util center;
 			@util size(100%);
 		}
 
-		iframe {
+		/* uncss:ignore */ iframe {
 			display: block;
-			@util size(100%);
 		}
 	}
 
