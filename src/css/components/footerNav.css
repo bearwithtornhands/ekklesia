@@ -3,34 +3,49 @@
 		font-size: 15px;
 		line-height: 18px;
 		font-weight: var(--medium);
+
+		@media (--desktop) {
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: var(--normal);
+		}
 	}
 
 	&__list {
-		margin: -13px 0;
+		& {
+			margin: -13px 0;
 
-		@media (--tablet) {
-			margin: -8px -17px;
+			@media (--tablet) {
+				margin: -8px -17px;
 
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+			}
 		}
 	}
 
 	&__item {
-		padding-left: 0;
+		& {
+			padding-left: 0;
+		}
 
 		&:before {
 			display: none;
 		}
 
-		a {
+		a,
+		span {
 			display: block;
 			padding: 13px 0;
 			border: 0;
 
 			@media (--tablet) {
 				padding: 8px 17px;
+			}
+
+			@media (--desktop) {
+				padding: 8px 14px;
 			}
 		}
 	}
