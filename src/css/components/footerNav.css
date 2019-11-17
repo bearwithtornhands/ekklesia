@@ -25,15 +25,16 @@
 		}
 	}
 
-	&__item {
-		& {
-			padding-left: 0;
-		}
+	&__item,
+	&__separator {
+		padding-left: 0;
 
 		&:before {
 			display: none;
 		}
+	}
 
+	&__item {
 		a,
 		span {
 			display: block;
@@ -47,6 +48,24 @@
 			@media (--desktop) {
 				padding: 8px 14px;
 			}
+		}
+	}
+
+	&__separator {
+		& {
+			display: none;
+			padding: 0 10px;
+
+			@media (--desktop) {
+				display: block;
+			}
+		}
+
+		span {
+			display: block;
+			@util size(4px);
+			border-radius: 100%;
+			background-color: var(--primaryColor);
 		}
 	}
 }
