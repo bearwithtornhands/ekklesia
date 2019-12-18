@@ -32,30 +32,47 @@
 
         <div class="filter">
           <div class="filter__inner">
-            <div class="filter__item show-from-lg">
-              <div class="radioList">
-                <ul class="radioList__inner">
-                  <li class="radioList__item">
-                    <label>
-                      <input type="radio" name="type" value="articles" />
-                      <span>Статьи</span>
-                    </label>
-                  </li>
-                  <li class="radioList__item">
-                    <label>
-                      <input type="radio" name="type" value="videos" checked />
-                      <span>Видео</span>
-                    </label>
-                  </li>
-                  <li class="radioList__item">
-                    <label>
-                      <input type="radio" name="type" value="books" />
-                      <span>Книги</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
+            <div class="filter__left">
+              <div class="filter__item">
+                <div class="radioList">
+                  <ul class="radioList__inner">
+                    <li class="radioList__item">
+                      <label>
+                        <input type="radio" name="type" value="articles" />
+                        <span>Статьи</span>
+                      </label>
+                    </li>
+                    <li class="radioList__item">
+                      <label>
+                        <input type="radio" name="type" value="videos" checked />
+                        <span>Видео</span>
+                      </label>
+                    </li>
+                    <li class="radioList__item">
+                      <label>
+                        <input type="radio" name="type" value="books" />
+                        <span>Книги</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
 
+              </div>
+            </div>
+
+            <div class="filter__right">
+              <div class="filter__item hide-on-lg">
+                <div class="select select_small js-select">
+                  <select name="type">
+                    <option value="" disabled hidden>Категория</option>
+                    <option value="articles" selected>Статьи</option>
+                    <option value="videos">Видео</option>
+                    <option value="books">Книги</option>
+                  </select>
+
+                  <div class="select__head js-select-head"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
