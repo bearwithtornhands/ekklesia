@@ -22,7 +22,12 @@
 		margin: 8px 0;
 	}
 
-	&__image {
+	&__link {
+		display: block;
+		border: 0;
+	}
+
+	&__head {
 		& {
 			margin-bottom: 32px;
 
@@ -45,24 +50,30 @@
 		}
 
 		/* uncss:ignore */
-		iframe,
-		a {
+		iframe {
 			@util center;
 			@util size(100%);
-		}
-
-		/* uncss:ignore */ iframe {
 			display: block;
 		}
 	}
 
-	&__link {
+	&__video,
+	&__image {
 		& {
+			@util center;
+			@util size(100%);
 			display: block;
 			border: 0;
 			cursor: pointer;
 		}
 
+		img {
+			@util size(100%);
+			object-fit: cover;
+		}
+	}
+
+	&__video {
 		&:after {
 			@util center;
 			z-index: 1;
@@ -95,11 +106,6 @@
 					transition: none;
 				}
 			}
-		}
-
-		img {
-			@util size(100%);
-			object-fit: cover;
 		}
 	}
 }
